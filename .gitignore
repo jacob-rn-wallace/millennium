@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# KiCad
+*.kicad_pcb-bak
+*.sch-bak
+fp-info-cache
+
+# Fusion 360
+*.lock
+
+# Build artifacts
+build/
+dist/
+*.o
+*.elf
+*.bin
+*.hex
