@@ -70,22 +70,23 @@ or underscores — for example  `top-shell-exterior-left.jpg`  rather than
 
 Place files in the directory that matches their type:
 ```
-mechanical/scans/        — raw scan data
-mechanical/fusion/       — Fusion 360 native files
-mechanical/stl/          — print-ready STL and 3MF files
-mechanical/drawings/     — dimensioned drawings and measurement records
-electrical/photos/       — high resolution PCB photography
-electrical/schematics/   — traced schematics in KiCad or PDF
 electrical/bom/          — component identification and sourcing
+electrical/datasheets/   — component datasheets and protocol specifications
+electrical/photos/       — high resolution PCB photography
 electrical/rf/           — RF capture files and protocol documentation
+electrical/schematics/   — traced schematics in KiCad or PDF
 firmware/calibre/        — Calibre PCB firmware
 firmware/reserve/        — Reserve dock firmware
+manufacturing/assembly/  — reassembly documentation
 manufacturing/casting/   — mold-making and casting instructions
 manufacturing/materials/ — material specifications and suppliers
-manufacturing/assembly/  — reassembly documentation
+mechanical/drawings/     — dimensioned drawings and measurement records
+mechanical/fusion/       — Fusion 360 native files
+mechanical/scans/        — raw scan data
+mechanical/stl/          — print-ready STL and 3MF files
 sourcing/batteries/      — battery replacement sourcing
-sourcing/switches/       — Omron switch equivalents and sourcing
 sourcing/secondary/      — secondary market and donor unit guidance
+sourcing/switches/       — Omron switch equivalents and sourcing
 ```
 
 ---
