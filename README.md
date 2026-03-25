@@ -47,6 +47,7 @@ Millennium is guided by the following principles:
 ## Repository Structure
 ```
 millennium/
+├── CONTRIBUTING.md          # Contribution guidelines and code of conduct
 ├── LICENSE-DOCUMENTATION    # CC BY 4.0 (documentation)
 ├── LICENSE-FIRMWARE         # GPL-3.0 (firmware)
 ├── LICENSE-HARDWARE         # CERN-OHL-S-2.0 (hardware)
@@ -107,7 +108,7 @@ The MX1000 community has kept these mice alive for over twenty years. Work this 
 
 Millennium uses a split license model:
 
-- **Hardware designs and mechanical documentation** are licensed under the **CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)** (see `LICENSE-HARDWARE`)
+- **Hardware designs and mechanical documentation** are licensed under the **CERN Open Hardware License Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)** (see `LICENSE-HARDWARE`)
 - **Firmware** is licensed under the **GNU General Public License v3.0 (GPL-3.0)** (see `LICENSE-FIRMWARE`)
 - **Documentation** is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** (see `LICENSE-DOCUMENTATION`)
 
