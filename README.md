@@ -27,6 +27,7 @@ Millennium is guided by the following principles:
 
 - **Compatibility as a guarantee** — all Calibre (PCB) versions are compatible with all Reserve (dock) versions, enforced by a permanent interface specification
 - **Improvement over replication** — replacement components are not constrained by the original manufacturing process and should be measurably better where possible
+- **Capability over stasis** — where modern components offer genuine improvement, they are preferred over faithful reproduction; original behavior is preserved through firmware profiles rather than hardware constraints
 - **Open by default** — all design files, measurements, and documentation are published under open licenses so the community can build on them without restriction
 - **Buildability** — every process should be executable by a motivated individual with access to hobbyist tools, not just specialist equipment
 
@@ -34,7 +35,7 @@ Millennium is guided by the following principles:
 
 ## Components
 
-**Calibre** — the replacement PCB. Implements Bluetooth HID as an initial wireless target, with 27MHz protocol compatibility (matching the original receiver) as a subsequent goal. Where possible, builds on existing open source mouse hardware designs. Designated by revision as Calibre M1K###.
+**Calibre** — the replacement PCB. Targets a modern, currently manufactured sensor rather than attempting hardware-level replication of the original ADNS-6030. Original MX1000 behavior — 800 DPI, 125Hz report rate, original motion characteristics — is preserved as a firmware profile rather than a hardware constraint, ensuring authentic behavior is not dependent on a dwindling supply of harvested original sensors. Implements Bluetooth HID as an initial wireless target, with 27MHz protocol compatibility (matching the original receiver) as a subsequent goal. Where possible, builds on existing open source mouse hardware designs. All Calibre versions are guaranteed compatible with all Reserve versions. Designated by revision as Calibre M1K###.
 
 **Reserve** — the replacement charging and data dock. Electrically compatible with the original Logitech cradle's charging behavior. Adds a 1-Wire data channel over the existing charging contacts for firmware updates, diagnostics, and configuration. The original Logitech cradle remains fully functional for charging. Designated by revision as Reserve M1K###.
 
