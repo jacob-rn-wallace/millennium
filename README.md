@@ -41,6 +41,8 @@ Millennium is guided by the following principles:
 
 **Case** — replacement top and bottom shells, cast in urethane with double-shot legend inserts for permanent, wear-proof markings. A parametric process for applying custom graphics allows users to choose their own markings.
 
+**Regulator** — cross-platform host configuration software for Calibre. Provides DPI profile management, button remapping, report rate selection, and firmware profile switching including the Classic MX1000 behavior profile.
+
 **Parts documentation** — a complete open archive of every measurable and reproducible component: PCB photography, schematics, dimensional drawings, material specifications, and sourcing guides.
 
 ---
