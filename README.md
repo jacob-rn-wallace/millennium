@@ -116,3 +116,8 @@ Millennium uses a split license model:
 - **Documentation** is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** (see `LICENSE-DOCUMENTATION`)
 
 Unless otherwise noted, files are licensed according to the category they fall under.
+
+---
+
+Millennium is not affiliated with or endorsed by Logitech. "Logitech" and "MX1000" are trademarks of Logitech International S.A.
+
