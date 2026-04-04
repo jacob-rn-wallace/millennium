@@ -1,6 +1,6 @@
 # Every known production variant of the Logitech MX1000
 
-The Logitech MX1000 Laser Cordless Mouse — the world's first consumer laser mouse — shipped in **at least five distinct SKU configurations** across two hardware platforms (27 MHz RF and Bluetooth), two documented color finishes (Gunmetal Silver and Onyx Black "Midnight"), and multiple regional part numbers. Logitech's own 2004 press release confirmed two color options at launch, though the Midnight variant was distributed primarily in Europe and has been largely forgotten. This catalog documents every known variant, model number, hardware revision, and bundle configuration from FCC filings, Icecat product data, archived press releases, retail listings, teardown documentation, and community reports.
+The Logitech MX1000 Laser Cordless Mouse — the world's first consumer laser mouse — shipped in **at least six distinct SKU configurations** across two hardware platforms (27 MHz RF and Bluetooth), three documented color finishes (Gunmetal Silver, Onyx Black "Midnight", and a Dark Blue bundle variant), and multiple regional part numbers. Logitech's own 2004 press release confirmed two color options at launch, though the Midnight variant was distributed primarily in Europe and has been largely forgotten. This catalog documents every known variant, model number, hardware revision, and bundle configuration from FCC filings, Icecat product data, archived press releases, retail listings, teardown documentation, and community reports.
 
 ---
 
@@ -22,13 +22,15 @@ Internally, the wireless radio module is entirely different (27 MHz vs. Bluetoot
 
 ---
 
-## Two color finishes: Gunmetal Silver and Onyx Black "Midnight"
+## Color finishes: Gunmetal Silver, Onyx Black "Midnight", and Dark Blue bundle variant
 
-The Logitech press release of September 1, 2004 stated the MX1000 was **"available in two colors: gunmetal silver and onyx black."**[^7] Macworld's Peter Cohen specifically described these as "gunmetal silver and onyx black finishes."[^8]
+The Logitech press release of September 1, 2004 stated the MX1000 was **"available in two colors: gunmetal silver and onyx black."**[^7] Macworld's Peter Cohen specifically described these as "gunmetal silver and onyx black finishes."[^8] A third color variant — a darker, more saturated blue — was produced exclusively for the Cordless Desktop MX 3100 bundle.
 
 **Gunmetal Silver (SKU 931175-xxxx)** is the widely known standard version. The Gadgeteer's 2004 review described the top shell as a **"sparkly gunmetal bluish color"** with black rubberized side grips.[^9] Newegg US listings described it as "Blue/Black" or "2-Tone."[^10] This version was sold worldwide.
 
 **Onyx Black "Midnight" (SKU 931272-0914 and possibly others)** is the variant that corresponds to the reported "glossy dark gray" version. The Icecat product database lists it as a distinct product entry (Icecat ID 120366) under the full title **"Logitech MX1000 Laser Midnight Cordless Mouse."**[^11] It carried a separate European SKU (931272-0914) distinct from the standard European SKU (931175-0914),[^12] and the only North American retail SKU identified so far is 931272-0403, though this has not yet been confirmed. The hardware label part number **852152-1000** appears to be the consistent identifier for the Midnight variant, observed on units sold in both Europe and North America — distinguishing it from the Gunmetal Silver's -0000, -0100, and -0300 suffixes. This makes 852152-1000 a color variant identifier rather than a regional one. A 2006 Apple Community discussion documented the Midnight as sold by Italian (eprice.it) and French (cdiscount.com, multe-pass.com) retailers at roughly €10 less than the standard Gunmetal Silver.[^13] The same discussion observed that "related pictures look much alike, although they seem to have a different grip, smooth or rough," suggesting the Onyx Black finish may have had a smoother or glossier surface texture compared to the standard's sparkly metallic finish. The Icecat database listed both variants' color as simply "Black," and notably no EAN/GTIN barcode was recorded for the Midnight variant (the standard's EAN is 5099206968493).[^11] [^12] The Midnight accumulated 42,115 product views on Icecat versus 141,162 for the standard, suggesting lower overall production or distribution volume, though not necessarily regional restriction.
+
+**Dark Blue bundle variant (part number 852376-0000)** was produced exclusively for the Cordless Desktop MX 3100 bundle. Contemporary reviewers consistently described this variant as a distinctly darker, more saturated blue than the standard Gunmetal Silver, with one reviewer explicitly noting the bundle's color was "nicer than the dark green on the MX1000" — directly distinguishing the two.[^25] An AnandTech forum user who owned the MX 3100 bundle described the color in person as "very dark blue or even black in the lighting in my room," while another noted they preferred "the metallic grey color to blue of the MX3100 desktop."[^26] The part number 852376-0000 has not been observed on any standalone retail unit and appears to be exclusive to this bundle. No official Logitech color name for this finish has been identified.
 
 ---
 
@@ -55,6 +57,7 @@ Logitech's suffix convention: **-0403** = US/Americas, **-0914** = Continental E
 | **852152-0100** | M-RAG97 (RF) | Gunmetal Silver — variant; relationship to -0000 unclear |
 | **852152-0300** | M-RAG97 (RF) | Gunmetal Silver — observed on UK/European units |
 | **852152-1000** | M-RAG97 (RF) | Onyx Black "Midnight" — observed on units sold in both North America and Europe |
+| **852376-0000** | M-RAG97 (RF) | Dark Blue — MX 3100 bundle variant; not observed in standalone retail |
 | **852384-1000** | M-RBA97 (BT) | Bluetooth version |
 | **831145-0000** | C-BN34 | Charging dock / RF receiver |
 | **832243-0000** | C-UV35 | Bluetooth USB transceiver |
@@ -103,6 +106,16 @@ The user noted that a contact-cleaning fix worked on the "updated version" but n
 
 ## Bundle configurations that included the MX1000
 
+### Logitech Cordless Desktop MX 3100
+
+- **SKU:** unconfirmed
+- **MSRP:** ~$120
+- **Released:** Early 2005[^25] [^26]
+- **Contents:** MX1000 RF mouse (M-RAG97, 852376-0000) + MX 3000 wireless keyboard + C-BN34 charging dock / RF receiver + AC adapter + 2 AA batteries (for keyboard) + software CD
+- Uses Logitech proprietary 2.4GHz Fast RF wireless, not Bluetooth
+- Mouse color is a distinctly darker blue than the standalone Gunmetal Silver variant; pre-paired with keyboard at factory
+- The dock serves as both RF receiver and charging cradle, as in the standalone MX1000
+
 ### Logitech Cordless Desktop MX 5000 Laser
 
 - **SKU:** 967558-0403 (US)
@@ -119,11 +132,7 @@ The user noted that a contact-cleaning fix worked on the "updated version" but n
 - **Contents:** diNovo Bluetooth keyboard + diNovo MediaPad (remote/numpad with LCD) + MX1000 Bluetooth mouse (M-RBA97) + C-UV35 USB Bluetooth receiver + charging base station + AC adapter + 6 AA batteries + MediaLife software CD
 - This was the third generation of the diNovo line (1st gen used MX900 mouse with BT 1.1; 2nd gen "diNovo 2" used BT 1.2; 3rd gen Laser used MX1000 with BT 2.0 EDR)
 
-The Bluetooth MX1000 was **not available outside these two bundle configurations**.[^3] Both bundles were succeeded by the MX 5500 Revolution desktop set, which replaced the MX1000 with the MX Revolution Bluetooth mouse around 2008.[^21]
-
-### Not a bundle: Cordless Desktop MX 3100 Laser
-
-Sometimes confused with MX1000 bundles, the **MX 3100 Laser** set included the **MX600** laser mouse (AA battery powered, ~6 months battery life), not the MX1000.[^22] Mentioned here to prevent misidentification.
+The Bluetooth MX1000 was **not available outside the MX 5000 and diNovo bundle configurations**.[^3] Both bundles were succeeded by the MX 5500 Revolution desktop set, which replaced the MX1000 with the MX Revolution Bluetooth mouse around 2008.[^21]
 
 ---
 
@@ -136,6 +145,7 @@ Sometimes confused with MX1000 bundles, the **MX 3100 Laser** set included the *
 | **August 20, 2004** | First Newegg listing appears for 931175-0403[^10] |
 | **September 1, 2004** | Logitech officially announces MX1000 — "world's first laser mouse" — in two colors[^7] |
 | **Late September – October 2004** | Retail availability; first reviews published[^9] [^23] |
+| **Early 2005** | Cordless Desktop MX 3100 announced at CeBIT; includes MX1000 RF mouse in dark blue variant (852376-0000)[^25] |
 | **August 16, 2005** | Logitech announces Cordless Desktop MX 5000 Laser (with BT MX1000)[^19] |
 | **September 26, 2005** | FCC certification filed for M-RBA97 Bluetooth mouse (DZL201945)[^2] |
 | **Late 2005** | MX 5000 bundle ships; BT MX1000 enters market |
@@ -151,7 +161,7 @@ Sometimes confused with MX1000 bundles, the **MX 3100 Laser** set included the *
 
 | Component | Model | FCC ID | ANATEL | Key Part Numbers |
 |-----------|-------|--------|--------|-----------------|
-| Mouse (RF) | M-RAG97 | DZL201758 | 00495-06-02347 | 852152-0000/-0100/-0300/-1000 |
+| Mouse (RF) | M-RAG97 | DZL201758 | 00495-06-02347 | 852152-0000/-0100/-0300/-1000; 852376-0000 |
 | Mouse (Bluetooth) | M-RBA97 | DZL201945 | 00729-06-02347 | 852384-1000 |
 | Dock / RF Receiver | C-BN34 | None (receive-only) | — | 831145-0000 |
 | Bluetooth USB Dongle | C-UV35 | DZL201986 | — | 832243-0000 |
@@ -163,9 +173,9 @@ The FCC grantee code for all MX1000 filings is **DZL** (Logitech Inc., Newark, C
 
 ## What remains undocumented
 
-This catalog identifies **two hardware platforms** (M-RAG97 RF and M-RBA97 Bluetooth), **two color finishes** (Gunmetal Silver standard and Onyx Black "Midnight" with part number 852152-1000), **at least three regional SKU variants** for the standard RF version (US, Continental Europe, UK), **two confirmed bundles** containing the Bluetooth variant, and evidence of **silent hardware revisions** to both the mouse and dock across the production run.
+This catalog identifies **two hardware platforms** (M-RAG97 RF and M-RBA97 Bluetooth), **three color finishes** (Gunmetal Silver standard, Onyx Black "Midnight" with part number 852152-1000, and Dark Blue bundle variant with part number 852376-0000), **at least three regional SKU variants** for the standard RF version (US, Continental Europe, UK), **three confirmed bundles** (one RF, two Bluetooth), and evidence of **silent hardware revisions** to both the mouse and dock across the production run.
 
-The most significant gap for hardware preservation is **PCB-level documentation**. The FCC's internal photo PDFs for both DZL201758 (4 parts) and DZL201945 (2 submission rounds) are publicly downloadable and reveal PCB layout and component-level details, though no comparative analysis between RF and Bluetooth variants has been published. The ADNS-6000's SROM firmware versioning adds another invisible layer of variation that would require reading the sensor's SROM_ID register from live hardware. Finally, the physical differences between the Midnight and standard finishes have never been photographed side-by-side; whether the Onyx Black shell was truly glossy versus the standard's sparkly metallic remains based on a single user's observation. For a preservation project, acquiring specimens of both the 931175 and 931272 SKUs and performing direct comparison would be the definitive next step.
+The most significant gap for hardware preservation is **PCB-level documentation**. The FCC's internal photo PDFs for both DZL201758 (4 parts) and DZL201945 (2 submission rounds) are publicly downloadable and reveal PCB layout and component-level details, though no comparative analysis between RF and Bluetooth variants has been published. The ADNS-6000's SROM firmware versioning adds another invisible layer of variation that would require reading the sensor's SROM_ID register from live hardware. The physical differences between the Midnight and standard finishes have never been photographed side-by-side; whether the Onyx Black shell was truly glossy versus the standard's sparkly metallic remains based on a single user's observation. The MX 3100 bundle mouse (852376-0000) represents a third M-RAG97 color variant whose precise color name has not been confirmed by any Logitech primary source — contemporary reviews describe it as a darker, more saturated blue than the standard finish, but no official color designation has been found. The retail SKU for the MX 3100 bundle has not been confirmed. For a preservation project, acquiring specimens of each color variant and performing direct side-by-side comparison would be the definitive next step.
 
 ---
 
@@ -192,6 +202,8 @@ The most significant gap for hardware preservation is **PCB-level documentation*
 [^19]: Logitech IR — Keyboard LCD a Smart Addition to Logitech Cordless Desktop MX 5000 Laser (2005). <https://ir.logitech.com/press-releases/press-release-details/2005/Keyboard-LCD-a-Smart-Addition-to-Logitech-Cordless-Desktop-MX-5000-Laser/default.aspx>
 [^20]: Amazon — Logitech diNovo Media Desktop Laser (967562-0403). <https://www.amazon.com/Logitech-diNovo-Media-Desktop-Laser/dp/B000AY0IT4>
 [^21]: Hardware Canucks — Logitech MX5500 Revolution review. <https://hardwarecanucks.com/forum/threads/logitech-mx5500-review.21387/>
-[^22]: APH Networks — Logitech MX3000 Review. <https://aphnetworks.com/reviews/logitech_mx3000>
+[^22]: APH Networks — Logitech MX3000 Review (MX3000 bundle uses MX600, not MX1000). <https://aphnetworks.com/reviews/logitech_mx3000>
 [^23]: Trusted Reviews — Logitech MX1000 Laser Cordless Mouse Review. <https://www.trustedreviews.com/reviews/logitech-mx1000-laser-cordless-mouse>
 [^24]: Logitech News — Logitech Mice Deliver Revolution in Personal Computing Navigation (August 24, 2006). <https://news.logitech.com/press-releases/news-details/2006/Logitech-Mice-Deliver-Revolution-in-Personal-Computing-Navigation-The-Wheel-Reinvented-Revolution-Mice-Speed-Mac-and-PC-Users-Through-Digital-Content-with-Hyper-Fast-Scrolling/default.aspx>
+[^25]: ASE Labs — Logitech Cordless Desktop MX3100 preview (documents color distinction from standard MX1000). <http://www.prop.aselabs.com/articles.php?id=172>
+[^26]: AnandTech Forums — Logitech Cordless Desktop MX 3100 deal discussion (documents in-person color description). <https://forums.anandtech.com/threads/hot-or-not-logitech-cordless-desktop-mx-3100-w-mx1000-laser-mouse-115-33-shipped-buy-com.1567695/>
