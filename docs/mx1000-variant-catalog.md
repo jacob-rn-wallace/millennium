@@ -4,6 +4,20 @@ The Logitech MX1000 Laser Cordless Mouse — the world's first consumer laser mo
 
 ---
 
+## Millennium project reference specimens
+
+The Millennium project's physical collection includes three RF variant specimens, referred to throughout this document and in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md) by the shorthand **Mouse 1**, **Mouse 2**, and **Mouse 3**. These designations reflect acquisition order, not manufacture order — Mouse 3 is in fact the oldest unit.
+
+| Shorthand | Part number | Color | Serial | PCB revision | Manufacture date | Condition |
+|-----------|-------------|-------|--------|-------------|-----------------|-----------|
+| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | Rev. B | Week 14, 2005 (Apr 4–10) | Boxed with dock, documentation, SetPoint 2.14b CD |
+| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | Rev. A (predicted) | Week 7, 2005 (Feb 14–20) | Loose; PCB inspection pending |
+| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | Rev. A | Week 41, 2004 (Oct 4–10) | Loose with dock and power adapter |
+
+Mouse 3 is the earliest confirmed production specimen in the collection and one of the earliest known retail units overall, manufactured within the first weeks of availability. Mouse 1's dock (C-BN34) carries PCB date code FMa060304, indicating it was manufactured approximately one year before the mouse itself — consistent with charger components being stocked ahead of the mouse launch.
+
+---
+
 ## Two hardware platforms: RF and Bluetooth
 
 The MX1000 existed as two fundamentally different wireless devices sharing an identical ergonomic shell.

@@ -2,6 +2,8 @@
 
 Logitech's "LZ" serial numbers from the 2002–2012 era encode the exact manufacturing week directly in the digit string using a **Y+WW date format** — a pattern confirmed across five product lines with exact-week matches to known launch and release dates. The format is `LZ + [revision letter] + [Y: year's last digit] + [WW: ISO week number] + [NNNNN: 5-digit production sequence]`. Applying this to the three confirmed MX1000 physical specimens places Mouse 3 (LZB44150762, Midnight Black) in **October 2004** near the product's launch, Mouse 2 (LZB50753012, Dark Blue) in **February 2005**, and Mouse 1 (LZC51411902, Gunmetal Silver) in **April 2005** — a unit with the revised PCB. The B/C letter in position 3 tracks the PCB hardware revision (Rev. A → Rev. B), not the year. This decoding is independently validated by MX Revolution and G400 PIDs that align with publicly documented launch dates to the exact calendar week.
 
+The shorthand **Mouse 1**, **Mouse 2**, and **Mouse 3** refers to the Millennium project's three physical RF specimens in acquisition order. For full specimen definitions including part numbers, colors, and condition, see the reference specimens table in [`mx1000-variant-catalog.md`](mx1000-variant-catalog.md).
+
 ---
 
 ## The serial number format
