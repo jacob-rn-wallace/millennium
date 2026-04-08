@@ -8,13 +8,17 @@ The Logitech MX1000 Laser Cordless Mouse — the world's first consumer laser mo
 
 The Millennium project's physical collection includes three RF variant specimens, referred to throughout this document and in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md) by the shorthand **Mouse 1**, **Mouse 2**, and **Mouse 3**. These designations reflect acquisition order, not manufacture order — Mouse 3 is in fact the oldest unit.
 
-| Shorthand | Part number | Color | Serial | PCB revision | Manufacture date | Condition |
-|-----------|-------------|-------|--------|-------------|-----------------|-----------|
-| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | Rev. B | Week 14, 2005 (Apr 4–10) | Boxed with dock, documentation, SetPoint 2.14b CD |
-| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | Rev. A (predicted) | Week 7, 2005 (Feb 14–20) | Loose; PCB inspection pending |
-| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | Rev. A | Week 41, 2004 (Oct 4–10) | Loose with dock and power adapter |
+| Shorthand | Part number | Color | Serial | PCB revision | Manufacture date | Battery | Current status |
+|-----------|-------------|-------|--------|-------------|-----------------|---------|----------------|
+| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | Rev. B | Week 14, 2005 (Apr 4–10) | Original Midnight Black unit battery (capacity unknown) | Benched; available for comparative testing |
+| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | Rev. A (predicted) | Week 7, 2005 (Feb 14–20) | Unknown | In transit (customs) |
+| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | Rev. A | Week 41, 2004 (Oct 4–10) | NewPower99 2100mAh replacement | Benched; exhibits cursor jumping — see below |
 
 Mouse 3 is the earliest confirmed production specimen in the collection and one of the earliest known retail units overall, manufactured within the first weeks of availability. Mouse 1's dock (C-BN34) carries PCB date code FMa060304, indicating it was manufactured approximately one year before the mouse itself — consistent with charger components being stocked ahead of the mouse launch.
+
+On **April 7, 2025**, Mouse 3 arrived and was initially used as a daily driver in preference to Mouse 1 due to more responsive button feel. The batteries of the two units were swapped at this point: Mouse 3 received the NewPower99 2100mAh unit originally installed in Mouse 1, and Mouse 1 received Mouse 3's original battery (which had held a charge despite being unreplaced across the unit's life). On **April 8, 2025**, cursor jumping behavior was observed on Mouse 3 during use and both units were benched; the Logitech MX Anywhere 2S was returned to daily driver duty.
+
+The cursor jumping on Mouse 3 is consistent with the laser reactivation latency bug documented in community reports from 2004–2005 and discussed in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). Mouse 3's Rev. A PCB and LZB serial place it squarely in the affected production window. Mouse 1 (Rev. B, LZC) has not yet been tested under equivalent conditions; a controlled comparison between the two units would provide direct first-hand evidence of the functional difference between PCB revisions, complementing the community-sourced accounts currently in the record.
 
 ---
 
