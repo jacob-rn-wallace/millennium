@@ -49,17 +49,17 @@ Applying the confirmed format to the three physical units:
 | Mouse | Serial | Letter | Y+WW | Manufacture window | PCB Rev. | Sequence |
 |-------|--------|--------|------|--------------------|----------|----------|
 | Mouse 3 (Midnight Black, 852152-1000) | LZB**441**50762 | B | 2004, wk 41 | **Oct 4–10, 2004** | Rev. A | 50,762 |
-| Mouse 2 (Dark Blue, 852376-0000) | LZB**507**53012 | B | 2005, wk 07 | **Feb 14–20, 2005** | Rev. A* | 53,012 |
+| Mouse 2 (Dark Blue, 852376-0000) | LZB**507**53012 | B | 2005, wk 07 | **Feb 14–20, 2005** | **Rev. B** | 53,012 |
 | Mouse 1 (Gunmetal Silver, 852152-0200) | LZC**514**11902 | C | 2005, wk 14 | **Apr 4–10, 2005** | Rev. B | 11,902 |
 
-*Mouse 2's PCB revision was not inspected at time of writing; LZB prefix predicts Rev. A by analogy with Mouse 3.
+Physical inspection of all three units has confirmed these revisions — with one significant finding: **Mouse 2 is LZB prefix but Rev. B PCB**, establishing that the LZB/LZC letter boundary does not cleanly track the Rev. A/Rev. B hardware transition. The transition occurred partway through the LZB production run, somewhere between week 41 of 2004 (Mouse 3, Rev. A) and week 7 of 2005 (Mouse 2, Rev. B).
 
 This decoding is consistent with every independently known constraint:
 
 - **Mouse 3** decodes to week 41 of 2004 — just three to four weeks after the MX1000's September 1, 2004 press release announcement[^5] and within the first confirmed retail availability window (late September / October 2004).[^6] It is the earliest of the three units and carries the original Rev. A PCB.
+- **Mouse 2** decodes to week 7 of 2005 and carries Rev. B despite its LZB prefix — placing the Rev. A to Rev. B transition window between October 2004 and February 2005.
 - **Mouse 1**'s retail box contained SetPoint 2.14b (a 2004-dated disc)[^7] and documentation Rev. 1.5. These are launch-era materials shipped with a unit manufactured in April 2005 — consistent with Logitech using pre-printed box contents across the first year of production without updating them to reflect incremental software releases.
 - **Mouse 1**'s dock (C-BN34) carries PCB date code **FMa060304**, interpreted as March or June 2004 — roughly 10–13 months before the mouse itself was manufactured. Charger components drawn from existing inventory are routinely manufactured and stocked ahead of the mouse, explaining the gap.
-- **Mouse 1** is the newest unit and carries PCB Rev. B, consistent with the hardware revision occurring between the LZB and LZC production batches.
 
 ---
 
@@ -78,11 +78,11 @@ The known letter assignments across product families in this era are:
 | Letter | Products observed |
 |--------|------------------|
 | A | Webcams (QuickCam Messenger V-UM14, QuickCam V-UJ16) |
-| B | MX1000 PCB Rev. A (original hardware) |
-| C | MX1000 PCB Rev. B (revised "2.0" hardware) |
+| B | MX1000 — both Rev. A (Mouse 3, week 41/2004) and Rev. B (Mouse 2, week 7/2005) |
+| C | MX1000 — Rev. B only (Mouse 1, week 14/2005) |
 | S | Trackballs (Cordless Optical TrackMan T-RB22) |
 
-Whether letters are assigned per product category, per production line, or per hardware revision across all products is not fully determined by available data. The most coherent interpretation for the MX1000 specifically is that **B = original Rev. A PCB** and **C = revised Rev. B PCB**, with the letter change coinciding with the latency fix discussed below.
+Physical inspection of all three project specimens has established that **B does not exclusively correspond to Rev. A** — Mouse 2 is LZB but Rev. B. The most likely interpretation is that the letter tracks the **part number family or color variant** (852152 vs. 852376) rather than the PCB revision. All 852152 units observed are LZB (Mouse 3) or LZC (Mouse 1); the 852376 Dark Blue bundle unit (Mouse 2) is also LZB. The Rev. A to Rev. B transition occurred within the LZB production window, not at the LZB/LZC boundary.
 
 ---
 
