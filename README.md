@@ -66,13 +66,20 @@ millennium/
 
 ## Current Status
 
-The project is in its earliest stage. A unit is en route for physical characterization. No hardware has been produced yet.
+The project is in active early development. Three physical specimens are in hand and have been partially characterized; four additional units are expected imminently.
 
-Immediate priorities upon receiving the unit:
+Work completed to date:
 
-- Full internal photography and dimensional measurement
-- PCB tracing and component identification
-- Charging contact voltage and current characterization
+- Internal photography and component cataloguing across two dissected units
+- PCB revision identification (Rev. A and Rev. B confirmed across the collection)
+- Serial number format decoded and cross-validated against known production dates
+- Roller PCB dissected, both sides scanned, all components catalogued
+- Variant documentation: colorways, shell finishes, packaging revisions, and retail transition points
+
+Active priorities:
+
+- Main PCB dissection and full component catalogue (awaiting unit selection)
+- Sensor optical geometry measurement (required to confirm PAW3395 sensor selection)
 - RF capture of 27MHz protocol traffic
 - Shell geometry scan
 
