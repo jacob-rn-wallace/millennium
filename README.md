@@ -35,9 +35,9 @@ Millennium is guided by the following principles:
 
 ## Components
 
-**Calibre** — the replacement PCB. Targets the PAW3395 optical sensor — currently manufactured, widely supported in open source firmware, and dramatically superior to the original S2020 (Logitech-exclusive Agilent LaserStream variant; closest public equivalent: ADNS-6000) in every tracked performance metric. Sensor selection is subject to confirmation against the MX1000's optical geometry once physical measurements are available. Original MX1000 behavior — 800 DPI, 125Hz report rate, original motion characteristics — is preserved as a firmware profile rather than a hardware constraint, ensuring authentic feel is not dependent on hardware replication. Implements Bluetooth HID as an initial wireless target, with 27MHz protocol compatibility (matching the original receiver) as a subsequent goal. Where possible, builds on existing open source mouse hardware designs. All Calibre versions are guaranteed compatible with all Reserve versions. Designated by revision as Calibre M1K###.
+**Calibre** — the replacement PCB. Targets the PAW3395 optical sensor — currently manufactured, widely supported in open source firmware, and dramatically superior to the original S2020 (Logitech-exclusive Agilent LaserStream variant; closest public equivalent: ADNS-6000) in every tracked performance metric. Sensor selection is subject to confirmation against the MX1000's optical geometry once physical measurements are available. Original MX1000 behavior — 800 DPI, 125Hz report rate, original motion characteristics — is preserved as a firmware profile rather than a hardware constraint, ensuring authentic feel is not dependent on hardware replication. Implements Bluetooth HID as an initial wireless target, with 27MHz protocol compatibility (matching the original receiver) as a subsequent goal. Where possible, builds on existing open source mouse hardware designs. All Calibre versions are guaranteed compatible with all Reserve versions. Board designs are designated by M1K identifier (see `docs/m1k-identifier-registry.md`).
 
-**Reserve** — the replacement charging and data dock. Electrically compatible with the original Logitech cradle's charging behavior. Adds a 1-Wire data channel over the existing charging contacts for firmware updates, diagnostics, and configuration. The original Logitech cradle remains fully functional for charging. Designated by revision as Reserve M1K###.
+**Reserve** — the replacement charging and data dock. Electrically compatible with the original Logitech cradle's charging behavior. Adds a 1-Wire data channel over the existing charging contacts for firmware updates, diagnostics, and configuration. The original Logitech cradle remains fully functional for charging. Board designs are designated by M1K identifier (see `docs/m1k-identifier-registry.md`).
 
 **Case** — replacement top and bottom shells, cast in urethane with double-shot legend inserts for permanent, wear-proof markings. A parametric process for applying custom graphics allows users to choose their own markings.
 
@@ -127,4 +127,3 @@ Unless otherwise noted, files are licensed according to the category they fall u
 ---
 
 Millennium is not affiliated with or endorsed by Logitech. "Logitech" and "MX1000" are trademarks of Logitech International S.A.
-
