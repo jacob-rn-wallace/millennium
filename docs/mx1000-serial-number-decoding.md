@@ -2,7 +2,9 @@
 
 Logitech's "LZ" serial numbers from the 2002–2012 era encode the exact manufacturing week directly in the digit string using a **Y+WW date format** — a pattern confirmed across five product lines with exact-week matches to known launch and release dates. The format is `LZ + [revision letter] + [Y: year's last digit] + [WW: ISO week number] + [NNNNN: 5-digit production sequence]`. Applying this to the three confirmed MX1000 physical specimens places Mouse 3 (LZB44150762, Midnight Black) in **October 2004** near the product's launch, Mouse 2 (LZB50753012, Dark Blue) in **February 2005**, and Mouse 1 (LZC51411902, Gunmetal Silver) in **April 2005** — a unit with the revised PCB. The B/C letter in position 3 tracks the PCB hardware revision (Rev. A → Rev. B), not the year. This decoding is independently validated by MX Revolution and G400 PIDs that align with publicly documented launch dates to the exact calendar week.
 
-The shorthand **Mouse 1**, **Mouse 2**, and **Mouse 3** refers to the Millennium project's three physical RF specimens in acquisition order. For full specimen definitions including part numbers, colors, and condition, see the reference specimens table in [`mx1000-variant-catalog.md`](mx1000-variant-catalog.md).
+The MX1000 was produced during a **transitional period** in Logitech's labeling conventions. Early units carry the long 11-character S/N format; later units use a shorter 7-character PID that omits the production sequence. Logitech formally documented this transition: the PID system replaced S/N on all current products, with MX1000 units spanning both label types across the production run.[^12] A third, even shorter 7-character PID variant (LZ + 5 alphanumeric characters) also appears on some MX1000 units, discussed in its own section below.
+
+The shorthand **Mouse 1**, **Mouse 2**, and **Mouse 3** refers to the Millennium project's three original physical RF specimens in acquisition order; Mice 4–7 refers to four subsequently acquired Gunmetal Silver units. For full specimen definitions including part numbers, colors, and condition, see the reference specimens table in [`mx1000-variant-catalog.md`](mx1000-variant-catalog.md).
 
 ---
 
@@ -42,9 +44,9 @@ Note that the 7-character **PID** format (e.g. LZ6**34**BJ) and the 11-character
 
 ---
 
-## The three MX1000 specimens decoded
+## The three original MX1000 specimens decoded
 
-Applying the confirmed format to the three physical units:
+Applying the confirmed format to the three original physical units:
 
 | Mouse | Serial | Letter | Y+WW | Manufacture window | PCB Rev. | Sequence |
 |-------|--------|--------|------|--------------------|----------|----------|
@@ -63,11 +65,83 @@ This decoding is consistent with every independently known constraint:
 
 ---
 
+## Four additional specimens decoded (Mice 4–7)
+
+Four subsequently acquired Gunmetal Silver units extend the dataset and introduce both a new S/N-format unit and the first confirmed PID-format MX1000 labels. Three of the four units carry a PID label (the short 7-character format, discussed in the following section); the fourth carries a standard 11-character S/N. All four are PCB Rev. B / Rev. B / Rev. A (main / roller / thumb). The thumb PCB being Rev. A across all four — including units with Rev. B main and roller boards — is consistent across every specimen examined to date and suggests the thumb PCB either did not receive a revision or its revision cadence is independent of the main and roller boards.
+
+| Mouse | P/N | ID type | ID | Main PCB | Roller PCB | Thumb PCB | Notes |
+|-------|-----|---------|-----|----------|------------|-----------|-------|
+| Mouse 4 | 852152-0000 | S/N | LZC45101572 | Rev. B | Rev. B | Rev. A | |
+| Mouse 5 | 852152-0100 | PID | LZ549B4 | Rev. B | Rev. B | Rev. A | Heavily scuffed label and sensor sticker |
+| Mouse 6 | 852152-0100 | PID | LZ549B4 | Rev. B | Rev. B | Rev. A | Label and sensor sticker in good condition |
+| Mouse 7 | 852152-0200 | PID | LZ603B4 | Rev. B | Rev. B | Rev. A | |
+
+Units are ordered chronologically by decoded manufacture date. Mice 5 and 6 share an identical PID (LZ549B4) and P/N — consistent with PIDs being lot-level rather than per-unit identifiers[^14] — and are distinguished in this table by physical condition alone, which is the only observable difference between the two units.
+
+**Mouse 4** (LZC45101572) decodes under the standard format to LZC, 2004, week 51 — **December 13–19, 2004**. This is consistent with community-sourced serial data that, while currently unverifiable, reports a Hungarian forum user posting S/N LZC44751269 in early 2005, decoding to LZC, 2004, week 47 — which would confirm LZC production was already running by November 2004.[^8] A week-51 LZC unit sits four weeks later in the same production run and is entirely unremarkable.
+
+**852152-0100** (Mice 5 and 6) is a confirmed Logitech MX1000 part number, appearing independently in parts distributor listings and secondhand market entries.[^15] Its specific regional assignment is not established by any source consulted. See the variant catalog for current notes.
+
+---
+
+## The short PID format (LZ + 5 characters)
+
+Three of the four new specimens carry labels reading "PID" rather than "S/N", with identifiers of the form **LZ + 5 alphanumeric characters** (e.g. LZ549B4, LZ603B4). This is structurally distinct from both the 11-character S/N and the 7-character PID documented elsewhere (e.g. LZ634BJ for the MX Revolution). It decodes as follows:
+
+| Position | Characters | Field | Meaning |
+|----------|-----------|-------|---------|
+| 1–2 | `LZ` | Manufacturer prefix | Same constant as S/N format |
+| 3 | Single digit | Year (Y) | Last digit of manufacture year |
+| 4–5 | Two digits | Week (WW) | ISO week number |
+| 6–7 | Two characters | Batch suffix (SS) | Factory, line, or lot code — meaning not publicly documented |
+
+Applying this to the observed PIDs:
+
+| PID | Y | WW | SS | Decoded window | Unit(s) |
+|-----|---|----|----|----------------|---------|
+| LZ549B4 | 2005 | 49 | B4 | **Dec 5–11, 2005** | Mouse 5, Mouse 6 |
+| LZ603B4 | 2006 | 03 | B4 | **Jan 16–22, 2006** | Mouse 7 |
+
+Three independent sources support this decoding. First, Logitech's own support KB documents the short PID form directly, citing LZ547BJ for the G-7 Gaming Mouse as an example of a PID "between 4 and 11 digits" — applying the same Y+WW reading gives 2005, week 47, suffix BJ.[^1] Second, an independent community analysis of Logitech Z-5500 speaker PIDs from the same production era observed the identical structure, describing the year digit and two-digit week field by position.[^13] Third, week 54 is not a valid ISO week, which rules out the alternative parse of Y=5, W=4 that would leave no positional room for the suffix at all.
+
+The **2-character suffix** (SS) is not publicly documented. The suffix `B4` recurs across two different week/year combinations (LZ549B4 in week 49/2005 and LZ603B4 in week 3/2006), which rules out a simple sequential unit counter and points to a factory, production line, or lot code whose meaning Logitech has not published. The recurrence of an identical PID across two physically distinct units (Mice 5 and 6) further confirms that these identifiers are lot-level, not per-unit. Record the suffix characters verbatim; do not interpret them.
+
+Note that the short PID **omits the revision letter** present in position 3 of the S/N format. This means short PIDs cannot be used to infer the LZB/LZC letter family, and the letter-based observations in this document apply only to S/N-format units.
+
+---
+
+## The S/N to PID label transition
+
+The coexistence of "S/N" and "PID" labels on the same MX1000 model is not a retail/OEM/refurbished distinction. Logitech's official support KB states the relationship directly: **the PID system replaced the older S/N system on all current Logitech products**.[^12] The MX1000 shipped across this transition, with early units carrying the legacy S/N field and later production carrying PID. Third-party service documentation for another Logitech product (the Harmony One remote) corroborates that these numbers are **lot-level identifiers shared across thousands of units**, not unique per-unit serials.[^14] Refurbished units, by contrast, are identified by an **LV-prefix** overlay sticker — so any label reading "PID LZxxxxx" is original production stock.
+
+The decoded PID dates (week 49 of 2005, week 3 of 2006) place the PID-labeled MX1000 units roughly 8–15 months after the S/N-labeled week-51/2004 unit (Mouse 4), which is consistent with the transition occurring in the second half of the production run. The precise cut-over date for the MX1000 is not documented by Logitech.
+
+---
+
+## The CMII ID field
+
+Several MX1000 bottom labels carry a field reading **"CMII ID:"** followed by a code, or with the code blank. Despite the visual similarity to the ICM Configuration Management II standard, this field is unrelated to it. **CMII here stands for China Ministry of Information Industry** (中华人民共和国信息产业部), the predecessor to the MIIT, which administered SRRC (State Radio Regulatory Commission) type-approval for radio-frequency devices sold in China.[^16]
+
+The code **2004DJ1825** parses as follows:
+
+| Segment | Value | Meaning |
+|---------|-------|---------|
+| Year | 2004 | Year the SRRC type-approval certificate was granted |
+| D | D | Short-range / micro-power radio device category — correct for a 27 MHz cordless mouse |
+| J | J | Imported equipment (进口) — correct for a Taiwan-assembled Logitech device |
+| 1825 | 1825 | Sequential certificate number within the year |
+
+Adjacent certificate numbers in the SRRC database confirm the format and Logitech's presence in it: **CMII ID 2004DJ1762** and **2004DJ1764**, both issued October 31, 2004 to Taiwan Logitech Electronics for micro-power wireless mouse devices operating at 27.045–27.195 MHz, sit 63 certificates earlier in the same year's series.[^17]
+
+The **blank-field variant** (CMII ID field present, no code) most likely reflects either units destined for non-China markets — where the China-specific marking would be populated on a separate label variant or omitted — or units produced and labeled before the 2004DJ1825 certificate was issued. Both mechanisms would result in the field being present in the label template but unpopulated. Which applies to a given unit is not directly documented by Logitech; record as "blank: non-China-market or pre-certificate production" rather than as a more specific claim.
+
+---
+
 ## What the revision letter encodes
 
 The letter in position 3 is a **hardware revision or product family identifier, not a year code**. Three independent observations support this conclusion.
 
-**Overlapping production windows.** The earliest confirmed LZC serial found in community data (LZC44751269) decodes to **week 47 of 2004** — while LZB units were still being manufactured through at least **week 7 of 2005** (Mouse 2). A year code would not produce a 12-week overlap between two consecutive letters.
+**Overlapping production windows.** The earliest reported LZC serial in community data (LZC44751269, unverified — see [^8]) decodes to **week 47 of 2004** — while LZB units were still being manufactured through at least **week 7 of 2005** (Mouse 2). If accurate, a year code would not produce a 12-week overlap between two consecutive letters.
 
 **Multiple years sharing a letter.** Two webcam units with prefix "A" decode to 2003 and 2004 respectively, demonstrating that a single letter spans multiple calendar years. Year encoding through the letter is therefore ruled out.
 
@@ -79,10 +153,10 @@ The known letter assignments across product families in this era are:
 |--------|------------------|
 | A | Webcams (QuickCam Messenger V-UM14, QuickCam V-UJ16) |
 | B | MX1000 — both Rev. A (Mouse 3, week 41/2004) and Rev. B (Mouse 2, week 7/2005) |
-| C | MX1000 — Rev. B only (Mouse 1, week 14/2005) |
+| C | MX1000 — Rev. B only (Mouse 1, week 14/2005; Mouse 4, week 51/2004) |
 | S | Trackballs (Cordless Optical TrackMan T-RB22) |
 
-Physical inspection of all three project specimens has established that **B does not exclusively correspond to Rev. A** — Mouse 2 is LZB but Rev. B. The most likely interpretation is that the letter tracks the **part number family or color variant** (852152 vs. 852376) rather than the PCB revision. All 852152 units observed are LZB (Mouse 3) or LZC (Mouse 1); the 852376 Dark Blue bundle unit (Mouse 2) is also LZB. The Rev. A to Rev. B transition occurred within the LZB production window, not at the LZB/LZC boundary.
+Physical inspection of all project specimens has established that **B does not exclusively correspond to Rev. A** — Mouse 2 is LZB but Rev. B. The most likely interpretation is that the letter tracks the **part number family or color variant** (852152 vs. 852376) rather than the PCB revision. All 852152 units observed are LZB (Mouse 3) or LZC (Mouse 1, Mouse 4); the 852376 Dark Blue bundle unit (Mouse 2) is also LZB. The Rev. A to Rev. B transition occurred within the LZB production window, not at the LZB/LZC boundary.
 
 ---
 
@@ -123,13 +197,16 @@ Combining the serial number decoding with other physical evidence, the MX1000 pr
 | MX1000 press release | Phys.org / Logitech IR[^5] | September 1, 2004 |
 | Mouse 3 (LZB, Rev. A) manufactured | Serial LZB44150762 | Week 41, 2004 (Oct 4–10) |
 | First retail availability | Reviews published[^6] | Late September – October 2004 |
-| LZC / Rev. B production begins | Earliest confirmed LZC serial (community data) | No later than week 47, 2004 |
-| Mouse 2 (LZB, Rev. A) manufactured | Serial LZB50753012 | Week 7, 2005 (Feb 14–20) |
+| LZC / Rev. B production begins | Earliest reported LZC serial (unverified community data)[^8] | No later than week 47, 2004 |
+| Mouse 4 (LZC, Rev. B) manufactured | Serial LZC45101572 | Week 51, 2004 (Dec 13–19) |
+| Mouse 2 (LZB, Rev. B) manufactured | Serial LZB50753012 | Week 7, 2005 (Feb 14–20) |
 | LZB production confirmed continuing | Mouse 2 serial | Through at least week 7, 2005 |
 | Mouse 1 (LZC, Rev. B) manufactured | Serial LZC51411902 | Week 14, 2005 (Apr 4–10) |
+| Mice 5 & 6 (PID, Rev. B) manufactured | PID LZ549B4 | Week 49, 2005 (Dec 5–11) |
+| Mouse 7 (PID, Rev. B) manufactured | PID LZ603B4 | Week 3, 2006 (Jan 16–22) |
 | MX Revolution announced as successor | Logitech press release[^2] | August 24, 2006 |
 
-This confirms that Mouse 3 is among the **earliest known production MX1000 units**, manufactured within the first retail availability window. The Rev. A to Rev. B transition occurred during a 12-week overlap period spanning late 2004 through early 2005.
+This confirms that Mouse 3 is among the **earliest known production MX1000 units**, manufactured within the first retail availability window. The Rev. A to Rev. B transition occurred during a 12-week overlap period spanning late 2004 through early 2005. Mouse 4 — a week-51/2004 LZC unit — is now the **earliest confirmed Rev. B specimen** in the project collection.
 
 ---
 
@@ -143,14 +220,20 @@ Whether **"LZ"** specifically references the Suzhou manufacturing facility — "
 
 ## References
 
-[^1]: Logitech Support — Locating part number (P/N) and model number (M/N). Example serial LZS44500643 for Cordless Optical TrackMan. <https://support.logi.com/hc/en-us/articles/360023352673-Locating-part-number-P-N-and-model-number-M-N>
+[^1]: Logitech Support — Locating part number (P/N) and model number (M/N). Example serial LZS44500643 for Cordless Optical TrackMan; example PID LZ547BJ for G-7 Gaming Mouse. <https://support.logi.com/hc/en-us/articles/360023352673-Locating-part-number-P-N-and-model-number-M-N>
 [^2]: Logitech News — Logitech Mice Deliver Revolution in Personal Computing Navigation (August 24, 2006); MX Revolution PID LZ634BJ decodes to week 34 of 2006 (August 21–27). <https://news.logitech.com/press-releases/news-details/2006/Logitech-Mice-Deliver-Revolution-in-Personal-Computing-Navigation-The-Wheel-Reinvented-Revolution-Mice-Speed-Mac-and-PC-Users-Through-Digital-Content-with-Hyper-Fast-Scrolling/default.aspx>
 [^3]: Geeky Gadgets — Logitech G400 Optical Gaming Mouse Announced (June 9, 2011); G400 PID LZ12433 decodes to week 24 of 2011 (June 13–19), matching the June 19 release date. <https://www.geeky-gadgets.com/logitech-g400-optical-gaming-mouse-announced-09-06-2011/>
 [^4]: Overclock.net — How to get a Logitech G400 without angle snapping; revised units carry PID LZ13333 (week 33 of 2011, August 15–21). <https://www.overclock.net/threads/how-to-get-a-logitech-g400-without-angle-snapping.1255817/>
 [^5]: Phys.org — Logitech Unveils the World's First Laser Mouse (September 1, 2004). <https://phys.org/news/2004-09-logitech-unveils-world180s-laser-mouse.html>
 [^6]: The Gadgeteer — Logitech MX1000 Laser Cordless Mouse Review (October 18, 2004). <https://the-gadgeteer.com/2004/10/18/logitech_mx1000_laser_cordless_mouse_review/>
 [^7]: Internet Archive — Logitech SetPoint 2.14b Driver Software (CD, 2004). <https://archive.org/details/logitech-set-point-2.4a>
-[^8]: HWSW Informatikai Kerekasztal — Logitech MX1000 forum thread, page 17; Hungarian users comparing LZB and LZC units in early 2005, noting "2.0" label on LZC units. <https://forum.hwsw.hu/topic/67618-logitech-mx1000/page__st__320>
+[^8]: HWSW Informatikai Kerekasztal — Logitech MX1000 forum thread, page 17; Hungarian users comparing LZB and LZC units in early 2005, reportedly noting "2.0" label on LZC units; serials LZC44751269 (week 47/2004) and LZB43604579 (week 36/2004) reportedly posted by separate users. **Page currently returns a 403 error; no archived snapshot is available. Content has not been independently verified and should be treated as unconfirmed.** <https://forum.hwsw.hu/topic/67618-logitech-mx1000/page__st__320>
 [^9]: HardWare.fr — Logitech MX1000 et latence; French-language forum discussion of laser latency bug and LZC fix, early 2005. <https://forum.hardware.fr/hfr/HardwarePeripheriques/Clavier-Souris/logitech-mx1000-latence-sujet_13862_1.htm>
 [^10]: Overclockers Forums — MX1000 Logitech Laser Mouse discussion; community reports on latency bug presence across LZB and LZC units. <https://www.overclockers.com/forums/threads/mx1000-logitech-laser-mouse-what-do-you-think-of-it.352672/post-3320707>
 [^11]: Wikipedia — Logitech; Suzhou facility as primary manufacturing center. <https://en.wikipedia.org/wiki/Logitech>
+[^12]: Logitech Support — Locating part number (P/N) and model number (M/N); states "The PID is used on all current Logitech products and replaces the older serial number (S/N) system." <https://support.logi.com/hc/en-us/articles/360023352673-Locating-part-number-P-N-and-model-number-M-N>
+[^13]: Head-Fi.org — Almi's Logitech Z-5500 Mod thread, page 17; community member decodes Z-5500 PIDs using the same Y+WW structure, describing the year digit and two-digit week field. <https://www.head-fi.org/threads/almis-logitech-z-5500-mod-high-end-upgrade-for-the-speaker-system.657715/page-17>
+[^14]: Harmony Remote Repair — Harmony One Hardware Version Identification; notes that Logitech LZ-prefix PIDs "are not unique and actually represent manufacturing lot numbers" shared across thousands of units; refurbished units carry an LV-prefix overlay sticker. <https://www.harmonyremoterepair.com/harmony-one-pcb-verification.html>
+[^15]: ASAP Distribution — parts catalog entry for Logitech 852152-0100; eBay listing (MPN field); Spanish-language eBay parts lot "852152-0000/0100". 852152-0100 regional assignment not established by any source consulted. <https://www.asap-distribution.com/it-hardware/rfq/logitech/852152-0100/>
+[^16]: FYIcenter.com — What Is the CMIIT Code on My Phone; CMII/CMIIT ID explained as China Ministry of Information Industry type-approval identifier for wireless devices. <http://phone.fyicenter.com/1594_What_Is_the_CMIIT_Code_on_My_Phone.html>
+[^17]: fccid.io — CMII ID 2004DJ1762 and 2004DJ1764; both issued October 31, 2004 to Taiwan Logitech Electronics for micro-power wireless mouse at 27.045–27.195 MHz, confirming the YYYY+D+J+NNNN format and Logitech's presence in the 2004 SRRC certificate series. <https://fccid.io/CMII-ID-2004DJ1762>
