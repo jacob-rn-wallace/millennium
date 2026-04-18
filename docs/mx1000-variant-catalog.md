@@ -12,9 +12,9 @@ All PCB revision data reflects physical inspection of main, roller, and thumb PC
 
 | Shorthand | Part number | Color | ID | ID type | Main PCB | Roller PCB | Thumb PCB | Manufacture date | Current status |
 |-----------|-------------|-------|----|---------|----------|------------|-----------|-----------------|----------------|
-| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | S/N | Rev. B | — | — | Week 14, 2005 (Apr 4–10) | Benched; boxed retail unit |
-| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | S/N | Rev. B | Rev. B | — | Week 7, 2005 (Feb 14–20) | Roller PCB dissected and scanned; in collection |
-| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | S/N | Rev. A | — | — | Week 41, 2004 (Oct 4–10) | Benched; exhibits laser latency bug |
+| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | S/N | Rev. B | Rev. B | Rev. A | Week 14, 2005 (Apr 4–10) | Benched; boxed retail unit |
+| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | S/N | Rev. B | Rev. B | Rev. A | Week 7, 2005 (Feb 14–20) | Roller PCB dissected and scanned; in collection |
+| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | S/N | Rev. A | Rev. A | Rev. A | Week 41, 2004 (Oct 4–10) | Benched; exhibits laser latency bug |
 | **Mouse 4** | 852152-0000 | Gunmetal Silver | LZC45101572 | S/N | Rev. B | Rev. B | Rev. A | Week 51, 2004 (Dec 13–19) | In collection |
 | **Mouse 5** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Week 49, 2005 (Dec 5–11) | In collection; heavily scuffed label and sensor sticker |
 | **Mouse 6** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Week 49, 2005 (Dec 5–11) | In collection; label and sensor sticker in good condition |
