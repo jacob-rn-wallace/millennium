@@ -6,21 +6,29 @@ The Logitech MX1000 Laser Cordless Mouse — the world's first consumer laser mo
 
 ## Millennium project reference specimens
 
-The Millennium project's physical collection includes three RF variant specimens, referred to throughout this document and in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md) by the shorthand **Mouse 1**, **Mouse 2**, and **Mouse 3**. These designations reflect acquisition order, not manufacture order — Mouse 3 is in fact the oldest unit.
+The Millennium project's physical collection includes seven RF variant specimens, referred to throughout this document and in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md) by the shorthand **Mouse 1** through **Mouse 7**. Mice 1–3 are numbered in acquisition order; Mice 4–7 are numbered in manufacture order (chronological by decoded serial/PID date). Mouse 3 is the oldest unit in the original trio; Mouse 4 is the earliest confirmed Rev. B specimen in the full collection.
 
-| Shorthand | Part number | Color | Serial | PCB revision | Manufacture date | Battery | Current status |
-|-----------|-------------|-------|--------|-------------|-----------------|---------|----------------|
-| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | Rev. B | Week 14, 2005 (Apr 4–10) | Original Midnight Black unit battery (capacity unknown) | Benched; available for comparative testing |
-| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | Rev. B (confirmed) | Week 7, 2005 (Feb 14–20) | Unknown | Arrived; in collection |
-| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | Rev. A | Week 41, 2004 (Oct 4–10) | HXJNLDC 2100mAh replacement | Benched; exhibits cursor jumping — see below |
+All PCB revision data reflects physical inspection of main, roller, and thumb PCBs. All seven specimens share main board part number **P/N 201758-0000**. The thumb PCB is Rev. A on every specimen examined to date, suggesting it either did not receive a revision or its revision cadence is independent of the main and roller boards.
 
-Mouse 3 is the earliest confirmed production specimen in the collection and one of the earliest known retail units overall, manufactured within the first weeks of availability. Mouse 1's dock (C-BN34) carries PCB date code FMa060304, indicating it was manufactured approximately one year before the mouse itself — consistent with charger components being stocked ahead of the mouse launch.
+| Shorthand | Part number | Color | ID | ID type | Main PCB | Roller PCB | Thumb PCB | Manufacture date | Current status |
+|-----------|-------------|-------|----|---------|----------|------------|-----------|-----------------|----------------|
+| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | S/N | Rev. B | — | — | Week 14, 2005 (Apr 4–10) | Benched; boxed retail unit |
+| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | S/N | Rev. B | Rev. B | — | Week 7, 2005 (Feb 14–20) | Roller PCB dissected and scanned; in collection |
+| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | S/N | Rev. A | — | — | Week 41, 2004 (Oct 4–10) | Benched; exhibits laser latency bug |
+| **Mouse 4** | 852152-0000 | Gunmetal Silver | LZC45101572 | S/N | Rev. B | Rev. B | Rev. A | Week 51, 2004 (Dec 13–19) | In collection |
+| **Mouse 5** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Week 49, 2005 (Dec 5–11) | In collection; heavily scuffed label and sensor sticker |
+| **Mouse 6** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Week 49, 2005 (Dec 5–11) | In collection; label and sensor sticker in good condition |
+| **Mouse 7** | 852152-0200 | Gunmetal Silver | LZ603B4 | PID | Rev. B | Rev. B | Rev. A | Week 3, 2006 (Jan 16–22) | In collection |
 
-Mouse 2's arrival confirmed its PCB as Rev. B despite its LZB serial prefix — establishing that the LZB/LZC letter boundary does not cleanly track the Rev. A/Rev. B hardware transition. The revision transition occurred partway through the LZB production run. Mouse 3 (LZB, week 41/2004) is Rev. A; Mouse 2 (LZB, week 7/2005) is Rev. B — meaning the transition occurred somewhere between those two manufacture dates. The letter change from LZB to LZC appears to track the part number family or color variant rather than the PCB revision. For the full serial number and hardware revision analysis, see [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md).
+Mice 5 and 6 share an identical PID (LZ549B4) and part number — consistent with PIDs being lot-level identifiers rather than per-unit serials, as documented in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). They are distinguished in this table by physical condition alone. Dashes in the roller and thumb PCB revision columns indicate the board has not yet been inspected for that specimen.
+
+Mouse 1's dock (C-BN34) carries PCB date code FMa060304, indicating it was manufactured approximately one year before the mouse itself — consistent with charger components being stocked ahead of the mouse launch.
+
+Mouse 2's arrival confirmed its PCB as Rev. B despite its LZB serial prefix — establishing that the LZB/LZC letter boundary does not cleanly track the Rev. A/Rev. B hardware transition. The revision transition occurred partway through the LZB production run. Mouse 3 (LZB, week 41/2004) is Rev. A; Mouse 2 (LZB, week 7/2005) is Rev. B — meaning the transition occurred somewhere between those two manufacture dates. The letter change from LZB to LZC appears to track the part number family or color variant rather than the PCB revision. Mouse 4 (LZC, week 51/2004) is the earliest confirmed Rev. B specimen in the collection, predating Mouse 2 by approximately ten weeks despite carrying a later serial prefix letter. For the full serial number and hardware revision analysis, see [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md).
 
 On **April 7, 2025**, Mouse 3 arrived and was initially used as a daily driver in preference to Mouse 1 due to more responsive button feel. The batteries of the two units were swapped at this point: Mouse 3 received the HXJNLDC 2100mAh unit originally installed in Mouse 1, and Mouse 1 received Mouse 3's original battery (which had held a charge despite being unreplaced across the unit's life). On **April 8, 2025**, cursor jumping behavior was observed on Mouse 3 during use and both units were benched; the Logitech MX Anywhere 2S was returned to daily driver duty.
 
-The cursor jumping on Mouse 3 is consistent with the laser reactivation latency bug documented in community reports from 2004–2005 and discussed in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). Mouse 3's Rev. A PCB and LZB serial place it squarely in the affected production window. Mouse 1 (Rev. B, LZC) has not yet been tested under equivalent conditions; a controlled comparison between the two units would provide direct first-hand evidence of the functional difference between PCB revisions, complementing the community-sourced accounts currently in the record.
+The cursor jumping on Mouse 3 is consistent with the laser reactivation latency bug documented in community reports from 2004–2005 and discussed in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). Mouse 3's Rev. A PCB and LZB serial place it squarely in the affected production window. Mouse 1 (Rev. B, LZC) has not yet been tested under equivalent conditions; a controlled comparison between the two units would provide direct first-hand evidence of the functional difference between PCB revisions, complementing the community-sourced accounts currently in the record. Mouse 4 (Rev. B, LZC, week 51/2004) represents an additional candidate for this comparison and is the earliest confirmed Rev. B unit in the collection.
 
 ---
 
@@ -78,7 +86,7 @@ Logitech's suffix convention: **-0403** = US/Americas, **-0914** = Continental E
 | Part Number | Model | Notes |
 |-------------|-------|-------|
 | **852152-0000** | M-RAG97 (RF) | Gunmetal Silver — commonly observed on US units |
-| **852152-0100** | M-RAG97 (RF) | Gunmetal Silver — variant; relationship to -0000 unclear |
+| **852152-0100** | M-RAG97 (RF) | Gunmetal Silver — two confirmed specimens (Mice 5 and 6); regional assignment not established |
 | **852152-0300** | M-RAG97 (RF) | Gunmetal Silver — observed on UK/European units |
 | **852152-1000** | M-RAG97 (RF) | Onyx Black "Midnight" — observed on units sold in both North America and Europe |
 | **852376-0000** | M-RAG97 (RF) | Dark Blue — MX 3100 bundle variant; not observed in standalone retail |
@@ -117,14 +125,16 @@ The early windowed box was also noted in contemporary reviews: the Phoronix revi
 
 ### Mouse PCB revisions
 
-Physical inspection of the Millennium project's three RF specimens has confirmed that the MX1000 RF mouse (M-RAG97) shipped in **at least two distinct PCB revisions**, both marked on the mainboard itself. All three specimens share the mainboard part number **P/N 201758-0000** — the same identifier used in the FCC filing DZL201758, confirming Logitech used a unified numbering system across internal part numbers and regulatory submissions.
+Physical inspection of the Millennium project's seven RF specimens has confirmed that the MX1000 RF mouse (M-RAG97) shipped in **at least two distinct PCB revisions**, both marked on the mainboard itself. All specimens share the mainboard part number **P/N 201758-0000** — the same identifier used in the FCC filing DZL201758, confirming Logitech used a unified numbering system across internal part numbers and regulatory submissions.
 
-| PCB Revision | Serial prefix | Confirmed specimen | Manufacture date |
-|-------------|--------------|-------------------|-----------------|
-| **Rev. A** | LZB | Mouse 3 (852152-1000, Midnight Black) | Week 41, 2004 (Oct 4–10) |
-| **Rev. B** | LZB and LZC | Mouse 2 (852376-0000, Dark Blue, LZB) and Mouse 1 (852152-0200, Gunmetal Silver, LZC) | Week 7, 2005 and Week 14, 2005 respectively |
+| PCB Revision | Serial/PID | Confirmed specimens | Manufacture date(s) |
+|-------------|------------|---------------------|---------------------|
+| **Rev. A** | LZB (S/N) | Mouse 3 (852152-1000, Midnight Black) | Week 41, 2004 (Oct 4–10) |
+| **Rev. B** | LZB, LZC (S/N); LZ549B4, LZ603B4 (PID) | Mouse 2 (852376-0000, Dark Blue, LZB); Mouse 4 (852152-0000, LZC); Mouse 1 (852152-0200, LZC); Mice 5 & 6 (852152-0100, PID); Mouse 7 (852152-0200, PID) | Week 7, 2005 through week 3, 2006 |
 
-Mouse 2's confirmed Rev. B PCB despite its LZB serial prefix establishes that the LZB/LZC letter boundary does **not** cleanly correspond to the Rev. A/Rev. B hardware transition. The transition occurred partway through the LZB production run — Mouse 3 (LZB, week 41/2004) is Rev. A while Mouse 2 (LZB, week 7/2005) is Rev. B, placing the transition window between October 2004 and February 2005. The letter change from LZB to LZC appears to track the part number family (852152 vs. 852376) or color variant rather than the PCB revision. The PCBs across all three specimens are otherwise **component-for-component identical** on visual inspection. Component-level differences between Rev. A and Rev. B have not yet been determined. For the full serial number and hardware revision analysis, see [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md).
+The thumb PCB is **Rev. A on every specimen where it has been inspected** (Mice 4, 5, 6, and 7). It has not yet been inspected on Mice 1, 2, or 3. Whether the thumb PCB received any revision during the production run is unknown.
+
+Mouse 2's confirmed Rev. B PCB despite its LZB serial prefix establishes that the LZB/LZC letter boundary does **not** cleanly correspond to the Rev. A/Rev. B hardware transition. The transition occurred partway through the LZB production run — Mouse 3 (LZB, week 41/2004) is Rev. A while Mouse 2 (LZB, week 7/2005) is Rev. B, placing the transition window between October 2004 and February 2005. Mouse 4 (LZC, week 51/2004) is the earliest confirmed Rev. B specimen and predates Mouse 2 by approximately ten weeks. The letter change from LZB to LZC appears to track the part number family (852152 vs. 852376) or color variant rather than the PCB revision. The PCBs across all specimens are otherwise **component-for-component identical** on visual inspection. Component-level differences between Rev. A and Rev. B have not yet been determined. For the full serial number and hardware revision analysis, see [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md).
 
 AnandTech forum users reported that early MX1000 units (purchased at launch in late 2004) suffered a severe **~1 second cursor dead zone** when the mouse was lifted and replaced on a surface, while later purchasers could not reproduce the issue.[^15] One user concluded: "I'm betting that there were two different REV models of the MX1000, hence why there's so much confusion and disagreement." The serial number evidence now confirms this intuition was correct — the Rev. A / Rev. B split aligns with the latency bug reports, with LZC/Rev. B units consistently associated with the fix. The FCC test report for the M-RAG97 is referenced as **AGY-734658-0000.A0** — the ".A0" suffix is consistent with the Rev. A designation observed on early production boards.[^1]
 
@@ -188,13 +198,16 @@ The Bluetooth MX1000 was **not available outside the MX 5000 and diNovo bundle c
 | **August 20, 2004** | First Newegg listing appears for 931175-0403[^10] |
 | **September 1, 2004** | Logitech officially announces MX1000 — "world's first laser mouse" — in two colors[^7] |
 | **Late September – October 2004** | Retail availability; first reviews published[^9] [^23] |
-| **Week 41, 2004 (Oct 4–10)** | Mouse 3 (LZB44150762, 852152-1000, Midnight Black, PCB Rev. A) manufactured — earliest confirmed specimen in Millennium project collection |
+| **Week 41, 2004 (Oct 4–10)** | Mouse 3 (LZB44150762, 852152-1000, Midnight Black, PCB Rev. A) manufactured — earliest known production specimen in Millennium project collection |
+| **Week 51, 2004 (Dec 13–19)** | Mouse 4 (LZC45101572, 852152-0000, Gunmetal Silver, PCB Rev. B) manufactured — earliest confirmed Rev. B specimen in collection |
 | **Early 2005** | Cordless Desktop MX 3100 announced at CeBIT; includes MX1000 RF mouse in dark blue variant (852376-0000)[^25] |
 | **Week 7, 2005 (Feb 14–20)** | Mouse 2 (LZB50753012, 852376-0000, Dark Blue, PCB **Rev. B**) manufactured — establishes that LZB serial prefix does not exclusively correspond to Rev. A hardware |
 | **Week 14, 2005 (Apr 4–10)** | Mouse 1 (LZC51411902, 852152-0200, Gunmetal Silver, PCB Rev. B) manufactured — boxed retail unit with SetPoint 2.14b and documentation Rev. 1.5 |
 | **August 16, 2005** | Logitech announces Cordless Desktop MX 5000 Laser (with BT MX1000)[^19] |
 | **September 26, 2005** | FCC certification filed for M-RBA97 Bluetooth mouse (DZL201945)[^2] |
+| **Week 49, 2005 (Dec 5–11)** | Mice 5 & 6 (PID LZ549B4, 852152-0100, Gunmetal Silver, PCB Rev. B) manufactured — identical PIDs confirm lot-level identifier system |
 | **Late 2005** | MX 5000 bundle ships; BT MX1000 enters market |
+| **Week 3, 2006 (Jan 16–22)** | Mouse 7 (PID LZ603B4, 852152-0200, Gunmetal Silver, PCB Rev. B) manufactured |
 | **2006** | diNovo Media Desktop Laser ships with BT MX1000[^20] |
 | **July 11, 2006** | Updated FCC filing for M-RBA97 with new internal/external photos (hardware revision)[^2] |
 | **August 24, 2006** | Logitech announces MX Revolution as MX1000 successor ($99.99 MSRP)[^24] |
@@ -219,9 +232,9 @@ The FCC grantee code for all MX1000 filings is **DZL** (Logitech Inc., Newark, C
 
 ## What remains undocumented
 
-This catalog identifies **two hardware platforms** (M-RAG97 RF and M-RBA97 Bluetooth), **three color finishes** (Gunmetal Silver standard, Onyx Black "Midnight" with part number 852152-1000, and Dark Blue bundle variant with part number 852376-0000), **at least three regional SKU variants** for the standard RF version (US, Continental Europe, UK), **three confirmed bundles** (one RF, two Bluetooth), and **two confirmed PCB hardware revisions** (Rev. A on LZB-prefix units, Rev. B on LZC-prefix units) with evidence of additional silent revisions to the dock across the production run.
+This catalog identifies **two hardware platforms** (M-RAG97 RF and M-RBA97 Bluetooth), **three color finishes** (Gunmetal Silver standard, Onyx Black "Midnight" with part number 852152-1000, and Dark Blue bundle variant with part number 852376-0000), **at least three regional SKU variants** for the standard RF version (US, Continental Europe, UK), **three confirmed bundles** (one RF, two Bluetooth), and **two confirmed PCB hardware revisions** (Rev. A on LZB-prefix units manufactured through at least week 41/2004, Rev. B confirmed from week 51/2004 onward) with evidence of additional silent revisions to the dock across the production run. The regional assignment of part number **852152-0100** (two confirmed specimens, Mice 5 and 6) has not been established by any source consulted.
 
-**PCB-level documentation** has been partially addressed by physical inspection of the Millennium project's three specimens, which confirmed the existence of Rev. A and Rev. B PCB designations and their correlation with LZB and LZC serial prefixes respectively. All three boards share part number P/N 201758-0000. Component-level differences between Rev. A and Rev. B have not yet been determined — both are visually identical on inspection, and the functional difference (the laser latency fix) may have been entirely a firmware change rather than a component change. Mouse 2 (Dark Blue, LZB prefix) has not yet been inspected. For the full serial number and hardware revision analysis, see [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md).
+**PCB-level documentation** has been partially addressed by physical inspection of the Millennium project's seven specimens. The thumb PCB has been confirmed as Rev. A on Mice 4–7; it has not yet been inspected on Mice 1, 2, or 3, and it is unknown whether the thumb PCB ever received a revision at all. Component-level differences between Rev. A and Rev. B main boards have not yet been determined — both are visually identical on inspection, and the functional difference (the laser latency fix) may have been entirely a firmware change rather than a component change. For the full serial number and hardware revision analysis, see [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md).
 
 The FCC's internal photo PDFs for both DZL201758 (4 parts) and DZL201945 (2 submission rounds) are publicly downloadable and reveal PCB layout and component-level details, though no comparative analysis between RF and Bluetooth variants has been published. The ADNS-6000's SROM firmware versioning adds another invisible layer of variation that would require reading the sensor's SROM_ID register from live hardware. The physical differences between the Midnight and standard finishes have never been photographed side-by-side; whether the Onyx Black shell was truly glossy versus the standard's sparkly metallic remains based on a single user's observation. The MX 3100 bundle mouse (852376-0000) represents a third M-RAG97 color variant whose precise color name has not been confirmed by any Logitech primary source — contemporary reviews describe it as a darker, more saturated blue than the standard finish, but no official color designation has been found. The retail SKU for the MX 3100 bundle has not been confirmed. For a preservation project, performing direct side-by-side comparison of all three color variants and a detailed component-level diff between Rev. A and Rev. B PCBs would be the definitive next steps.
 
