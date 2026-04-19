@@ -10,17 +10,19 @@ The Millennium project's physical collection includes seven RF variant specimens
 
 All PCB revision data reflects physical inspection of main, roller, and thumb PCBs. All seven specimens share main board part number **P/N 201758-0000**. The thumb PCB is Rev. A on every specimen examined to date, suggesting it either did not receive a revision or its revision cadence is independent of the main and roller boards.
 
-| Shorthand | Part number | Color | ID | ID type | Main PCB | Roller PCB | Thumb PCB | Manufacture date | Current status |
-|-----------|-------------|-------|----|---------|----------|------------|-----------|-----------------|----------------|
-| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | S/N | Rev. B | Rev. B | Rev. A | Week 14, 2005 (Apr 4–10) | Benched; boxed retail unit |
-| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | S/N | Rev. B | Rev. B | Rev. A | Week 7, 2005 (Feb 14–20) | Roller PCB dissected and scanned; in collection |
-| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | S/N | Rev. A | Rev. A | Rev. A | Week 41, 2004 (Oct 4–10) | Benched; exhibits laser latency bug |
-| **Mouse 4** | 852152-0000 | Gunmetal Silver | LZC45101572 | S/N | Rev. B | Rev. B | Rev. A | Week 51, 2004 (Dec 13–19) | In collection |
-| **Mouse 5** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Week 49, 2005 (Dec 5–11) | In collection; heavily scuffed label and sensor sticker |
-| **Mouse 6** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Week 49, 2005 (Dec 5–11) | In collection; label and sensor sticker in good condition |
-| **Mouse 7** | 852152-0200 | Gunmetal Silver | LZ603B4 | PID | Rev. B | Rev. B | Rev. A | Week 3, 2006 (Jan 16–22) | In collection |
+**PCB transplant convention:** the three PCBs of any given mouse (main, roller, and thumb) are treated as an inseparable unit for both documentation and physical transplant purposes. The main and roller PCBs are effectively inseparable in practice — desoldering them without lifting pads has proven unreliable — and the thumb PCB is kept with them for consistency. Any transplant operation moves all three boards together. When a transplant has occurred, the PCB origin column records which mouse the boards originated from, preserving full traceability of manufacture date, serial/PID, and revision data independently of the chassis they currently occupy.
 
-Mice 5 and 6 share an identical PID (LZ549B4) and part number — consistent with PIDs being lot-level identifiers rather than per-unit serials, as documented in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). They are distinguished in this table by physical condition alone. Dashes in the roller and thumb PCB revision columns indicate the board has not yet been inspected for that specimen.
+| Shorthand | Part number | Color | ID | ID type | Main PCB | Roller PCB | Thumb PCB | PCB origin | Manufacture date | Current status |
+|-----------|-------------|-------|----|---------|----------|------------|-----------|------------|-----------------|----------------|
+| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | S/N | Rev. B | Rev. B | Rev. A | Mouse 5 (LZ549B4, week 49/2005) | Week 14, 2005 (Apr 4–10) | Functional; PCB transplant April 19, 2026 |
+| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | S/N | Rev. B | Rev. B | Rev. A | Mouse 4 (LZC45101572, week 51/2004) | Week 7, 2005 (Feb 14–20) | Functional; PCB transplant April 19, 2026 |
+| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | S/N | Rev. A | Rev. A | Rev. A | Original | Week 41, 2004 (Oct 4–10) | Benched; exhibits laser latency bug |
+| **Mouse 4** | 852152-0000 | Gunmetal Silver | LZC45101572 | S/N | Rev. B | Rev. B | Rev. A | Donated to Mouse 2 (April 19, 2026) | Week 51, 2004 (Dec 13–19) | Shell only |
+| **Mouse 5** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Donated to Mouse 1 (April 19, 2026) | Week 49, 2005 (Dec 5–11) | Shell only; heavily scuffed label and sensor sticker |
+| **Mouse 6** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Original | Week 49, 2005 (Dec 5–11) | Functional; label and sensor sticker in good condition |
+| **Mouse 7** | 852152-0200 | Gunmetal Silver | LZ603B4 | PID | Rev. B | Rev. B | Rev. A | Original | Week 3, 2006 (Jan 16–22) | Functional |
+
+Mice 5 and 6 share an identical PID (LZ549B4) and part number — consistent with PIDs being lot-level identifiers rather than per-unit serials, as documented in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). They are distinguished by physical condition. PCB revision data for Mice 4 and 5 was confirmed prior to transplant and remains in the record; their boards now reside in Mice 2 and 1 respectively.
 
 Mouse 1's dock (C-BN34) carries PCB date code FMa060304, indicating it was manufactured approximately one year before the mouse itself — consistent with charger components being stocked ahead of the mouse launch.
 
@@ -28,7 +30,9 @@ Mouse 2's arrival confirmed its PCB as Rev. B despite its LZB serial prefix — 
 
 On **April 7, 2025**, Mouse 3 arrived and was initially used as a daily driver in preference to Mouse 1 due to more responsive button feel. The batteries of the two units were swapped at this point: Mouse 3 received the HXJNLDC 2100mAh unit originally installed in Mouse 1, and Mouse 1 received Mouse 3's original battery (which had held a charge despite being unreplaced across the unit's life). On **April 8, 2025**, cursor jumping behavior was observed on Mouse 3 during use and both units were benched; the Logitech MX Anywhere 2S was returned to daily driver duty.
 
-The cursor jumping on Mouse 3 is consistent with the laser reactivation latency bug documented in community reports from 2004–2005 and discussed in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). Mouse 3's Rev. A PCB and LZB serial place it squarely in the affected production window. Mouse 1 (Rev. B, LZC) has not yet been tested under equivalent conditions; a controlled comparison between the two units would provide direct first-hand evidence of the functional difference between PCB revisions, complementing the community-sourced accounts currently in the record. Mouse 4 (Rev. B, LZC, week 51/2004) represents an additional candidate for this comparison and is the earliest confirmed Rev. B unit in the collection.
+The cursor jumping on Mouse 3 is consistent with the laser reactivation latency bug documented in community reports from 2004–2005 and discussed in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). Mouse 3's Rev. A PCB and LZB serial place it squarely in the affected production window.
+
+On **April 19, 2026**, PCB transplants were performed on Mice 1 and 2. Mice 1 and 2 had the best cosmetic condition of the collection but were non-functional: Mouse 1's roller PCB pads had lifted during a desoldering attempt, and Mouse 2 had previously been dissected for documentation. Mice 4–7, acquired subsequently, were in poor cosmetic condition but all functional with batteries capable of holding at least some charge. Since all mice except Mouse 3 share identical PCB revisions, the transplants paired donors by manufacture date proximity: Mouse 4's PCBs (week 51/2004, closest to Mouse 2's week 7/2005) were installed in Mouse 2, and Mouse 5's PCBs (week 49/2005, closest to Mouse 1's week 14/2005) were installed in Mouse 1. Both transplants were successful. Mice 4 and 5 are retained as shells. Mice 6 and 7 remain intact and functional as spares.
 
 ---
 
