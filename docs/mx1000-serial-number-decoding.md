@@ -1,6 +1,8 @@
 # Logitech MX1000 serial number decoding: LZ-prefix date encoding and hardware revision analysis
 
-Logitech's "LZ" serial numbers from the 2002–2012 era encode the exact manufacturing week directly in the digit string using a **Y+WW date format** — a pattern confirmed across five product lines with exact-week matches to known launch and release dates. The format is `LZ + [revision letter] + [Y: year's last digit] + [WW: ISO week number] + [NNNNN: 5-digit production sequence]`. Applying this to the three confirmed MX1000 physical specimens places Mouse 3 (LZB44150762, Midnight Black) in **October 2004** near the product's launch, Mouse 2 (LZB50753012, Dark Blue) in **February 2005**, and Mouse 1 (LZC51411902, Gunmetal Silver) in **April 2005** — a unit with the revised PCB. The B/C letter in position 3 tracks the PCB hardware revision (Rev. A → Rev. B), not the year. This decoding is independently validated by MX Revolution and G400 PIDs that align with publicly documented launch dates to the exact calendar week.
+Logitech's "LZ" serial numbers from the 2002–2012 era encode the exact manufacturing week directly in the digit string using a **Y+WW date format** — a pattern confirmed across five product lines with exact-week matches to known launch and release dates. The standard mouse format is `LZ + [revision letter] + [Y: year's last digit] + [WW: ISO week number] + [NNNNN: 5-digit production sequence]`. Applying this to the three original MX1000 physical specimens places Mouse 3 (LZB44150762, Midnight Black) in **October 2004** near the product's launch, Mouse 2 (LZB50753012, Dark Blue) in **February 2005**, and Mouse 1 (LZC51411902, Gunmetal Silver) in **April 2005** — a unit with the revised PCB. The B/C letter in position 3 tracks the PCB hardware revision (Rev. A → Rev. B), not the year. This decoding is independently validated by MX Revolution and G400 PIDs that align with publicly documented launch dates to the exact calendar week.
+
+MX1000 charging dock serials follow the same Y+WW date encoding but introduce a variant three-character prefix — **LNA** — on a subset of units, discussed in its own section below. The LNA prefix appears to mark a short contract-manufacturer production run of docks from late 2004 through early 2005; it does not appear on any mouse serial observed to date.
 
 The MX1000 was produced during a **transitional period** in Logitech's labeling conventions. Early units carry the long 11-character S/N format; later units use a shorter 7-character PID that omits the production sequence. Logitech formally documented this transition: the PID system replaced S/N on all current products, with MX1000 units spanning both label types across the production run.[^12] A third, even shorter 7-character PID variant (LZ + 5 alphanumeric characters) also appears on some MX1000 units, discussed in its own section below.
 
@@ -14,7 +16,7 @@ Every old-format Logitech serial follows the 11-character structure **LZ + Lette
 
 | Position | Characters | Field | Meaning |
 |----------|-----------|-------|---------|
-| 1–2 | `LZ` | Manufacturer prefix | Logitech identifier — constant across all products and years |
+| 1–2 | `LZ` | Manufacturer prefix | Logitech identifier — constant across mouse serials; dock serials may carry `LNA` instead (see below) |
 | 3 | Single letter | Revision / family code | Hardware revision or product family identifier — **not** the year |
 | 4 | Single digit | Year (Y) | **Last digit of the manufacture year** (e.g. `4` = 2004, `5` = 2005) |
 | 5–6 | Two digits | Week (WW) | **ISO week number** (01–53) |
@@ -110,6 +112,28 @@ Note that the short PID **omits the revision letter** present in position 3 of t
 
 ---
 
+## The LNA prefix
+
+Two docks in the Millennium project collection carry an **LNA** serial prefix rather than the standard **LZ** prefix: Dock 2 (LNA50713319, C-BO34) and Dock 5 (LNA45100135, C-BN34). A third example — LNA50505952, reported on a Logitech C-BN34 or C-BO34 in a 2014 customer support thread[^18] — establishes that the prefix is not unique to this collection. All three known LNA serials belong to MX1000-family charging docks. No LNA-prefixed mouse serial has been observed.
+
+The three known LNA serials decode cleanly using the standard Y+WW+sequence structure, with LNA substituting for the usual LZ + letter three-character header:
+
+| Serial | Decoded date | Sequence |
+|--------|-------------|----------|
+| LNA45100135 | Week 51, 2004 (Dec 20–26) | 00135 |
+| LNA50505952 | Week 5, 2005 (Jan 31–Feb 6) | 05952 |
+| LNA50713319 | Week 7, 2005 (Feb 14–20) | 13319 |
+
+Three features of this dataset are notable. First, the production sequence numbers increase monotonically as decoded dates advance — consistent with a single continuous production run. Second, the sequence on the earliest example (00135) is characteristic of the opening days of a new run. Third, the three serials span just eight weeks, implying a short-term contract rather than an ongoing second facility.
+
+The LNA prefix is not documented in any Logitech support publication, FCC filing, or regulatory exhibit. It does not correspond to any known Logitech-owned facility by initials. The decoded production window — late December 2004 through mid-February 2005 — aligns precisely with the period when Logitech's Suzhou plant was nearing capacity ahead of its July 2005 expansion, and during the ramp-up for the Cordless Desktop MX 3100 bundle (announced at CeBIT in early-to-mid March 2005). Logitech's 10-K filings from this period document that approximately 50% of unit volume was outsourced to Asian contract manufacturers and ODMs, whose individual identities were not publicly disclosed for consumer peripherals.[^11]
+
+The most parsimonious interpretation is that **LNA identifies an Asian contract manufacturer engaged for a short overflow production run of MX1000-family charging docks** during the first holiday demand cycle. Charging cradles — simpler assemblies than the mouse itself — are the natural candidate for such overflow outsourcing. No specific ODM name has been linked to the LNA code in any accessible source.
+
+The format of LNA serials is therefore: **LNA + [Y] + [WW] + [NNNNN]**, where LNA is the full three-character facility/line identifier, and Y, WW, and NNNNN follow the same encoding as the standard LZ format. The modern Logitech acronym "LNA" (Local Network Access, used in CollabOS video-conferencing products from approximately 2021) is unrelated and should not be conflated with this prefix.
+
+---
+
 ## The S/N to PID label transition
 
 The coexistence of "S/N" and "PID" labels on the same MX1000 model is not a retail/OEM/refurbished distinction. Logitech's official support KB states the relationship directly: **the PID system replaced the older S/N system on all current Logitech products**.[^12] The MX1000 shipped across this transition, with early units carrying the legacy S/N field and later production carrying PID. Third-party service documentation for another Logitech product (the Harmony One remote) corroborates that these numbers are **lot-level identifiers shared across thousands of units**, not unique per-unit serials.[^14] Refurbished units, by contrast, are identified by an **LV-prefix** overlay sticker — so any label reading "PID LZxxxxx" is original production stock.
@@ -193,18 +217,24 @@ Combining the serial number decoding with other physical evidence, the MX1000 pr
 
 | Event | Evidence | Date |
 |-------|----------|------|
-| Dock (C-BN34) for Mouse 1 manufactured | PCB date code FMa060304 | March or June 2004 |
 | MX1000 press release | Phys.org / Logitech IR[^5] | September 1, 2004 |
 | Mouse 3 (LZB, Rev. A) manufactured | Serial LZB44150762 | Week 41, 2004 (Oct 4–10) |
+| Dock 3 (LZB, C-BN34) manufactured | Serial LZB44150762 | Week 41, 2004 (Oct 4–10) |
 | First retail availability | Reviews published[^6] | Late September – October 2004 |
+| Dock 1 (LZB, C-BN34) manufactured | Serial LZB44252090 | Week 42, 2004 (Oct 11–17) |
 | LZC / Rev. B production begins | Earliest reported LZC serial (unverified community data)[^8] | No later than week 47, 2004 |
 | Mouse 4 (LZC, Rev. B) manufactured | Serial LZC45101572 | Week 51, 2004 (Dec 13–19) |
+| Dock 5 (LNA, C-BN34) manufactured | Serial LNA45100135 | Week 51, 2004 (Dec 20–26) |
 | Mouse 2 (LZB, Rev. B) manufactured | Serial LZB50753012 | Week 7, 2005 (Feb 14–20) |
+| Dock 2 (LNA, C-BO34) manufactured | Serial LNA50713319 | Week 7, 2005 (Feb 14–20) |
 | LZB production confirmed continuing | Mouse 2 serial | Through at least week 7, 2005 |
 | Mouse 1 (LZC, Rev. B) manufactured | Serial LZC51411902 | Week 14, 2005 (Apr 4–10) |
 | Mice 5 & 6 (PID, Rev. B) manufactured | PID LZ549B4 | Week 49, 2005 (Dec 5–11) |
+| Dock 6 (LZ, C-BN34) manufactured | Serial LZ549BC | Week 49, 2005 (Dec 5–11) |
 | Mouse 7 (PID, Rev. B) manufactured | PID LZ603B4 | Week 3, 2006 (Jan 16–22) |
+| Dock 7 (LZ, C-BN34) manufactured | Serial LZ603BC | Week 3, 2006 (Jan 16–22) |
 | MX Revolution announced as successor | Logitech press release[^2] | August 24, 2006 |
+| Dock 4 (LZ, C-BN34) manufactured | Serial LZ713B1 | Week 13, 2007 (Mar 26–Apr 1) — postdates MX1000 active production; likely a service/replacement part |
 
 This confirms that Mouse 3 is among the **earliest known production MX1000 units**, manufactured within the first retail availability window. The Rev. A to Rev. B transition occurred during a 12-week overlap period spanning late 2004 through early 2005. Mouse 4 — a week-51/2004 LZC unit — is now the **earliest confirmed Rev. B specimen** in the project collection.
 
@@ -237,3 +267,4 @@ Whether **"LZ"** specifically references the Suzhou manufacturing facility — "
 [^15]: ASAP Distribution — parts catalog entry for Logitech 852152-0100; eBay listing (MPN field); Spanish-language eBay parts lot "852152-0000/0100". 852152-0100 regional assignment not established by any source consulted. <https://www.asap-distribution.com/it-hardware/rfq/logitech/852152-0100/>
 [^16]: FYIcenter.com — What Is the CMIIT Code on My Phone; CMII/CMIIT ID explained as China Ministry of Information Industry type-approval identifier for wireless devices. <http://phone.fyicenter.com/1594_What_Is_the_CMIIT_Code_on_My_Phone.html>
 [^17]: fccid.io — CMII ID 2004DJ1762 and 2004DJ1764; both issued October 31, 2004 to Taiwan Logitech Electronics for micro-power wireless mouse at 27.045–27.195 MHz, confirming the YYYY+D+J+NNNN format and Logitech's presence in the 2004 SRRC certificate series. <https://fccid.io/CMII-ID-2004DJ1762>
+[^18]: JustAnswer — Customer support thread referencing Logitech cordless desktop receiver M/N C-B034, S/N LNA50505952 (2014); third confirmed LNA-prefixed dock serial, decoding to week 5 of 2005 (January 31–February 6). <https://www.justanswer.com/computer-hardware/8i4zs-cordless-desktop-receiver-m-n-c-b034-s-n-lna.html>
