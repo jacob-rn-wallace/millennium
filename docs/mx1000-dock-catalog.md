@@ -16,7 +16,7 @@ The C-BN34 has at least **two documented internal wiring configurations**.[^2] A
 
 The C-BN34 carries no FCC ID of its own. Receivers operating below 30 MHz are exempt from equipment authorization under 47 C.F.R. § 15.101(b); the transmitting FCC ID (**DZL201758**) belongs to the mouse.[^3]
 
-**C-BO34 (P/N 831231-0000)** is the bundle-variant dock included with the Cordless Desktop MX 3100. The MX 3100 bundle paired the MX1000 mouse with the MX 3000 wireless keyboard; the dock therefore needed to receive from both devices simultaneously. The C-BO34 is externally similar to the C-BN34 but is a functionally distinct product. The collection contains one C-BO34 specimen (Dock 2, paired with Mouse 2). No internal inspection of the C-BO34 has been performed; whether it shares the C-BN34's PCB or uses a different design is undocumented.
+**C-BO34 (P/N 831231-0000)** is the bundle-variant dock included with the Cordless Desktop MX 3100. The MX 3100 bundle paired the MX1000 mouse with the MX 3000 wireless keyboard; the dock therefore needed to receive from both devices simultaneously. The C-BO34 is externally similar to the C-BN34 but is a functionally distinct product — its main board (P/N 201814-0???, Rev. A) differs from the C-BN34's (P/N 201797-0000, Rev. A) to accommodate simultaneous keyboard and mouse RF reception. The power board is shared with the C-BN34 (see internal PCB section below). The collection contains one C-BO34 specimen (Dock 2, paired with Mouse 2).
 
 ---
 
@@ -24,15 +24,42 @@ The C-BN34 carries no FCC ID of its own. Receivers operating below 30 MHz are ex
 
 The Millennium project's physical collection includes **seven charging docks**, designated **Dock 1** through **Dock 7**. Each dock is numbered to match its paired mouse specimen (see [`mx1000-variant-catalog.md`](mx1000-variant-catalog.md)). Docks 1, 2, and 3 were acquired paired with their corresponding mice; Docks 4–7 were acquired together as a lot alongside Mice 4–7, with original pairings unknown. For Docks 4–7, pairing assignments were determined by manufacture-date analysis of dock serial numbers against decoded mouse serial numbers and PIDs, as documented below.
 
-| Shorthand | P/N | M/N | S/N | Decoded manufacture date | Paired mouse | Pairing basis | Current status |
-|-----------|-----|-----|-----|--------------------------|--------------|---------------|----------------|
-| **Dock 1** | 831145-0000 | C-BN34 | LZB44252090 | Week 42, 2004 (Oct 11–17) | Mouse 1 | Acquired paired | In collection; Mouse 1's boxed retail unit |
-| **Dock 2** | 831231-0000 | C-BO34 | LNA50713319 | Week 7, 2005 (Feb 14–20) | Mouse 2 | Acquired paired | In collection; MX 3100 bundle dock |
-| **Dock 3** | 831145-0000 | C-BN34 | LZB44150762 | Week 41, 2004 (Oct 4–10) | Mouse 3 | Acquired paired; serial matches mouse | In collection |
-| **Dock 4** | 831145-0000 | C-BN34 | LZ713B1 | Week 13, 2007 (Mar 26–Apr 1) | Mouse 4 | By elimination; not original pairing | In collection |
-| **Dock 5** | 831145-0000 | C-BN34 | LNA45100135 | Week 51, 2004 (Dec 20–26) | Mouse 5 | Provisional; condition-matched | In collection |
-| **Dock 6** | 831145-0000 | C-BN34 | LZ549BC | Week 49, 2005 (Dec 5–11) | Mouse 6 | Provisional; manufacture-date matched | In collection |
-| **Dock 7** | 831145-0000 | C-BN34 | LZ603BC | Week 3, 2006 (Jan 15–21) | Mouse 7 | Manufacture-date matched; high confidence | In collection |
+| Shorthand | P/N | M/N | S/N | Manufacture week | Main PCB | Main P/N | Power PCB | Paired mouse | Pairing basis | Current status |
+|-----------|-----|-----|-----|-----------------|----------|----------|-----------|--------------|---------------|----------------|
+| **Dock 1** | 831145-0000 | C-BN34 | LZB44252090 | Week 42, 2004 (Oct 11–17) | Rev. A | 201797-0000 | Rev. B | Mouse 1 | Acquired paired | In collection; Mouse 1's boxed retail unit |
+| **Dock 2** | 831231-0000 | C-BO34 | LNA50713319 | Week 7, 2005 (Feb 14–20) | Rev. A | 201814-0??? | Rev. B | Mouse 2 | Acquired paired | In collection; MX 3100 bundle dock |
+| **Dock 3** | 831145-0000 | C-BN34 | LZB44150762 | Week 41, 2004 (Oct 4–10) | Rev. A | 201797-0000 | Rev. B | Mouse 3 | Acquired paired; serial matches mouse | In collection |
+| **Dock 4** | 831145-0000 | C-BN34 | LZ713B1 | Week 13, 2007 (Mar 26–Apr 1) | Rev. A | 201797-0000 | Rev. A | Mouse 4 | By elimination; not original pairing | In collection |
+| **Dock 5** | 831145-0000 | C-BN34 | LNA45100135 | Week 51, 2004 (Dec 20–26) | Rev. A | 201797-0000 | Rev. B | Mouse 5 | Provisional; condition-matched | In collection |
+| **Dock 6** | 831145-0000 | C-BN34 | LZ549BC | Week 49, 2005 (Dec 5–11) | Rev. A | 201797-0000 | Rev. A | Mouse 6 | Provisional; manufacture-date matched | In collection |
+| **Dock 7** | 831145-0000 | C-BN34 | LZ603BC | Week 3, 2006 (Jan 15–21) | Rev. A | 201797-0000 | Rev. A | Mouse 7 | Manufacture-date matched; high confidence | In collection |
+
+---
+
+## Internal PCB architecture
+
+Physical inspection of all seven docks reveals a consistent two-board architecture: a **main board** handling RF reception and USB connectivity, and a **power board** handling the charging circuit. The two boards are **electrically independent** — they operate as separate systems sharing a housing rather than as a unified circuit. This separation is consistent across both the C-BN34 and C-BO34 variants.
+
+### Main board
+
+The main board is **Rev. A** on every specimen in the collection, including Dock 4 (manufactured week 13/2007). No main board revision change has been observed across the entire production run. All C-BN34 specimens carry part number **201797-0000**; the C-BO34 (Dock 2) carries a distinct part number beginning **201814-0** with the suffix obscured by the LED shroud and not yet confirmed.
+
+### Power board
+
+The power board shows a **revision split** across the collection:
+
+| Power PCB | Docks | Manufacture weeks |
+|-----------|-------|-------------------|
+| Rev. B | Docks 1, 2, 3, 5 | Week 41/2004 through week 7/2005 |
+| Rev. A | Docks 4, 6, 7 | Week 49/2005 through week 13/2007 |
+
+The earlier production units carry Rev. B and the later units carry Rev. A — an apparent reversal of the expected revision order. The power board therefore has its own independent revision sequence, unrelated to the main board's. The most likely explanation is a design simplification or cost reduction introduced during the production run that reset or restarted the revision designation. The functional implications, if any, are undocumented.
+
+The power board carries no part number visible on any inspected specimen.
+
+### PCB date codes
+
+All inspected boards carry identical date codes regardless of which dock they came from: the main board stamps **06.28.04** and the power board stamps **06/24/04** (note the different separator conventions between the two boards). These dates are consistent across Docks 1–7, including Dock 4 manufactured in 2007. They therefore represent **PCB design revision dates** — the date the board layout was finalised — rather than manufacture dates. Every unit was built from the same unrevised Gerber files throughout the entire production run.
 
 ---
 
@@ -82,15 +109,8 @@ Manufacture-date matching between dock and mouse serials was the primary method 
 
 Dock 3's S/N (LZB44150762) is identical to Mouse 3's S/N (LZB44150762). This is not a transcription error — it indicates the dock and mouse were **serialized together as a unit** at the factory, sharing a production sequence number. This is consistent with retail packaging of the dock and mouse as a matched set and provides strong corroborating evidence that both identifiers were applied at final assembly rather than at separate sub-assembly stages.
 
-### Dock 1 PCB date code note
-
-The C-BN34 PCB inside Dock 1 carries a printed date code of **FMa060304**, which decodes to June 3, 2004 — approximately ten months before Mouse 1's manufacture date (week 14/2005). This is consistent with dock components being manufactured in advance of the mouse launch, stocked in inventory, and assembled into retail units over an extended period.
-
----
 
 ## Open questions
-
-The **internal construction of the C-BO34** has not been documented. Whether it shares a PCB with the C-BN34 or uses a different receiver design to accommodate simultaneous keyboard and mouse RF reception is unknown.
 
 Whether the **C-BN34 REV A0** label marking on Dock 1 is the only revision ever produced, or whether later units carry higher revision designations, has not been established. The internal wiring variant documented in community sources[^2] suggests at least a silent revision occurred, but no label evidence for a formal REV A1 or later has been observed.
 
