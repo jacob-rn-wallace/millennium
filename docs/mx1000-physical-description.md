@@ -4,42 +4,91 @@ This document establishes agreed component names and per-colorway visual descrip
 
 ---
 
+## Parts inventory
+
+The following table lists all known discrete plastic parts of the MX1000 case assembly, catalogued from physical inspection of Mouse 3 (P/N 852152-1000, Midnight Black). Part numbers and CAV codes were read directly from markings moulded into each part. Entries marked N/A either bore no marking or the marking was too small to read reliably.
+
+**CAV numbers** are injection moulding cavity identifiers — standard manufacturing traceability marks indicating which cavity in a multi-cavity mould tool produced a given part. They are not version or revision indicators.
+
+| Part term                  | P/N         | CAV | Material         |
+|----------------------------|-------------|-----|------------------|
+| Bottom plate               | 402443-0000 |   1 | ABS              |
+| Battery cover              | 003107-0000 |   1 | ABS              |
+| Main body                  | 402442-0000 |   1 | ABS (rubberized) |
+| Forward/back rockers pivot | 003109-0000 |   2 | ABS              |
+| Top shell                  | 402444-0000 |   3 | ABS              |
+| Battery indicator window   | 402449-0000 | N/A | ABS              |
+| Battery indicator light pipe | N/A       | N/A | ABS              |
+| Application switch button  | N/A         | N/A | ABS              |
+| Scroll wheel               | N/A         | N/A | ABS (rubberized) |
+| Scroll wheel cage          | N/A         | N/A | ABS              |
+| Scroll wheel pivot clip    | N/A         | N/A | ABS              |
+| Scroll wheel surround      | N/A         | N/A | ABS              |
+| Cruise control rockers     | N/A         | N/A | ABS              |
+| Forward/back rockers       | N/A         | N/A | ABS              |
+| Connect/Reset button       | N/A         | N/A | ABS              |
+| Power switch               | N/A         | N/A | ABS              |
+
+The battery indicator window (402449-0000) is the only part confirmed to lack a CAV number. Whether this reflects a single-cavity mould or an absent stamp is not confirmed.
+
+---
+
 ## Agreed component names
 
-The following names are used consistently throughout project documentation. Where Logitech used a different name internally or in marketing, it is noted.
+The following names are used consistently throughout project documentation. Where Logitech used a different name internally or in marketing, it is noted. Part numbers reference the inventory above.
 
-### Top shell zones (viewed from above)
+### Top shell (402444-0000) — viewed from above
 
-**Top shell** — the large curved hard plastic surface covering the upper body of the mouse, from the front button edge to the rear. The primary color surface of the mouse.
+The top shell is a discrete ABS part screwed to the main body. It is the primary color surface of the mouse. The left button and right button are integral features of the top shell — moulded as part of the same piece, not separate parts.
 
-**Left button** — the primary click surface, left side. Integrated into the top shell as a single moulded piece on the left.
+**Top shell** — the large curved hard plastic surface covering the upper body of the mouse, from the front button edge to the rear.
 
-**Right button** — the primary click surface, right side. Integrated into the top shell as a single moulded piece on the right.
+**Left button** — the primary click surface, left side. An integral feature of the top shell.
 
-**Scroll wheel assembly** — the entire scroll wheel zone in the center of the top shell, comprising several distinct sub-components:
+**Right button** — the primary click surface, right side. An integral feature of the top shell.
 
-- **Scroll wheel** — the rubberized wheel itself, used for vertical scrolling and middle-click
-- **Scroll wheel surround** — the moulded plastic frame that encircles the scroll wheel and the cruise control rockers as a single unit; sits flush with or slightly recessed into the top shell. **This is the key colorway-distinguishing element** — see per-colorway descriptions below
-- **Cruise control rockers** — the two elongated silver rocker buttons immediately above and below the scroll wheel, used for line-by-line incremental scrolling. These are silver/chrome on all known colorways
-- **Application switch button** — the small button between the two cruise control rockers, immediately beside the scroll wheel
+**Scroll wheel assembly** — the scroll wheel zone in the center of the top shell, comprising several distinct sub-components:
 
-**Battery indicator** — four LED windows on the left side of the top shell, visible from above; shows charge level. Logitech called these the "4-level battery indicator"
+- **Scroll wheel** — the rubberized ABS wheel itself, used for vertical scrolling and middle-click
+- **Scroll wheel surround** — the moulded ABS frame that encircles the scroll wheel and the cruise control rockers as a single unit; sits flush with or slightly recessed into the top shell. **This is the key colorway-distinguishing element** — see per-colorway descriptions below
+- **Scroll wheel cage** — the internal ABS structure that retains the scroll wheel
+- **Scroll wheel pivot clip** — the ABS clip that holds the scroll wheel on its axis within the cage
+- **Cruise control rockers** — the two elongated rocker buttons immediately above and below the scroll wheel, used for line-by-line incremental scrolling. These are silver/chrome on all known colorways
 
-**Logitech logo** — printed on the right side of the top shell
+**Battery indicator** — the charge level indicator on the left side of the top shell, visible from above. Logitech called this the "4-level battery indicator." Comprises two discrete parts:
 
-### Side zones
+- **Battery indicator window** (402449-0000) — the ABS lens/window piece visible from the outside; four apertures
+- **Battery indicator light pipe** — the internal ABS pipe that guides LED light to the window
 
-**Left grip panel** — the rubberized TPE overmold panel on the left (thumb) side of the mouse
+**Logitech logo** — printed on the right side of the top shell; an integral feature of the top shell surface
 
-**Right side** — smooth hard plastic, no grip panel; houses no buttons on the standard M-RAG97
+---
 
-**Thumb groove** — the pronounced concave recess on the left side where the thumb rests naturally; the left grip panel wraps around this
+### Main body (402442-0000)
 
-**Forward/back buttons** — two buttons above the thumb groove on the left side, used for browser navigation
+The main body is a single rubberized ABS part comprising most of the structural mass of the mouse. What might appear to be a separate rubber grip panel on the left side and a separate hard plastic panel on the right are both surface zones of this one part. The rubberized finish gives the grip zones their texture; the part is not a TPE overmold.
 
-**Connect/Reset button** — small recessed button on the underside; black on M-RAG97, red on M-RBA97 Bluetooth variant
+**Left grip zone** — the rubberized surface on the left (thumb) side of the main body
 
-### Underside
+**Right side** — the smooth surface on the right side of the main body; houses no buttons on the standard M-RAG97
+
+**Thumb groove** — the pronounced concave recess on the left side of the main body where the thumb rests naturally
+
+**Forward/back rockers** — a single pivoting ABS piece on the left side of the main body, above the thumb groove. Pressing the upper portion actuates the forward function; pressing the lower portion actuates the back function. (The forward/upper and back/lower convention maps to the standard browser navigation direction but is ultimately a firmware convention, not a physical one.) A cutout in the center of the piece accommodates the application switch button.
+
+**Forward/back rockers pivot** (003109-0000) — the ABS bracket that holds the forward/back rockers in place and provides the pivot axis
+
+**Application switch button** — a small discrete ABS button that sits in the cutout of the forward/back rockers on the left side of the mouse
+
+**Connect/Reset button** — small recessed ABS button on the underside; black on M-RAG97, red on M-RBA97 Bluetooth variant
+
+**Power switch** — ABS slider on the underside
+
+---
+
+### Bottom plate (402443-0000)
+
+The bottom plate is a discrete ABS part forming the underside of the mouse.
 
 **Foot pads** — PTFE (Teflon) glide pads; the original MX1000 shipped with four
 
@@ -47,7 +96,13 @@ The following names are used consistently throughout project documentation. Wher
 
 **Hardware label** — contains part number (P/N), model number (M/N), serial number (S/N), regulatory marks, and power specifications
 
-**Battery compartment** — not user-accessible in the conventional sense; the Li-ion battery is internal
+---
+
+### Battery cover (003107-0000)
+
+A discrete ABS part. The Li-ion battery is internal and not user-accessible in the conventional sense; the battery cover provides access to the battery compartment.
+
+---
 
 ### Dock (C-BN34)
 
@@ -67,9 +122,9 @@ The following names are used consistently throughout project documentation. Wher
 
 **Scroll wheel surround:** Silver/chrome, matching the cruise control rockers. The surround and rockers together form one continuous silver zone in the center of the top shell.
 
-**Left grip panel:** Black TPE/rubber
+**Left grip zone:** Rubberized ABS surface of the main body; reads as black rubber
 
-**Right side:** Hard plastic, same color family as top shell
+**Right side:** Smooth ABS surface of the main body, same color family as the top shell
 
 **Cruise control rockers:** Silver/chrome
 
@@ -83,11 +138,11 @@ The following names are used consistently throughout project documentation. Wher
 
 **Top shell finish:** Glossy. A deep, near-black finish with no metallic flake — the same surface character as a glossy black automotive finish or consumer electronics of that era. Confirmed by physical inspection of Mouse 3 and consistent across all promotional imagery.
 
-**Scroll wheel surround:** Black, matching the grip panels and top shell. The silver cruise control rockers are visible as discrete elements within the black surround — they do not blend into the surround the way they do on the Gunmetal Silver variant.
+**Scroll wheel surround:** Black, matching the main body surface and top shell. The silver cruise control rockers are visible as discrete elements within the black surround — they do not blend into the surround the way they do on the Gunmetal Silver variant.
 
-**Left grip panel:** Black TPE/rubber
+**Left grip zone:** Rubberized ABS surface of the main body; reads as black rubber
 
-**Right side:** Hard plastic, same glossy black as top shell
+**Right side:** Smooth ABS surface of the main body, same glossy black as the top shell
 
 **Cruise control rockers:** Silver/chrome (same as Gunmetal Silver)
 
@@ -105,7 +160,7 @@ The following names are used consistently throughout project documentation. Wher
 
 **Scroll wheel surround:** Silver/chrome — identical to the Gunmetal Silver variant. The entire scroll wheel zone (surround and cruise control rockers) reads as one continuous silver assembly, same as Gunmetal Silver.
 
-**Left grip panel:** Black TPE/rubber — assumed identical to Gunmetal Silver by inspection.
+**Left grip zone:** Rubberized ABS surface of the main body — assumed identical to Gunmetal Silver by inspection.
 
 **Cruise control rockers:** Silver/chrome (same as all variants).
 
@@ -113,7 +168,7 @@ The following names are used consistently throughout project documentation. Wher
 
 **Logitech logo:** Silver/metallic print (assumed same as other variants, unconfirmed).
 
-The Dark Blue variant is effectively **identical to the Gunmetal Silver in every respect except the top shell color**. The scroll wheel surround, grip panels, and all other elements match the Gunmetal Silver configuration.
+The Dark Blue variant is effectively **identical to the Gunmetal Silver in every respect except the top shell color**. The scroll wheel surround, grip zones, and all other elements match the Gunmetal Silver configuration.
 
 ---
 
@@ -125,7 +180,7 @@ The Dark Blue variant is effectively **identical to the Gunmetal Silver in every
 | Top shell color | Blue-grey (light-dependent) | Near-black | Dark saturated blue |
 | Scroll wheel surround | Silver/chrome | Black | Silver/chrome |
 | Scroll wheel zone reading | Unified silver element | Silver rockers on black surround | Unified silver element |
-| Grip panels | Black rubber | Black rubber | Black rubber |
+| Left grip zone | Black rubberized ABS | Black rubberized ABS | Black rubberized ABS |
 
 ---
 
