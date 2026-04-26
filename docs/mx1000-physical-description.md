@@ -11,7 +11,7 @@ The following table lists all known discrete plastic parts of the MX1000 case as
 Mould markings (2nd identifiers) were recorded across all seven specimens and are documented separately in `docs/mx1000-mould-markings.md`.
 
 | Part term                    | P/N         | Material         |
-|------------------------------|-------------|------------------|
+| ---------------------------- | ----------- | ---------------- |
 | Bottom plate                 | 402443-0000 | ABS              |
 | Battery cover                | 003107-0000 | ABS              |
 | Main body                    | 402442-0000 | ABS (rubberized) |
@@ -180,7 +180,7 @@ The Dark Blue variant is effectively **identical to the Gunmetal Silver in every
 ## Key visual differentiators between colorways
 
 | Feature                   | Gunmetal Silver             | Midnight Black                   | Dark Blue              |
-|---------------------------|-----------------------------|----------------------------------|------------------------|
+| ------------------------- | --------------------------- | -------------------------------- | ---------------------- |
 | Top shell finish          | Matte metallic              | Glossy                           | Matte metallic         |
 | Top shell color           | Blue-grey (light-dependent) | Near-black                       | Dark saturated blue    |
 | Scroll wheel surround     | Silver/chrome               | Black                            | Silver/chrome          |

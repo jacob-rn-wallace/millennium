@@ -14,6 +14,7 @@ The roadmap reflects current project state: Mouse 1 (Gunmetal Silver, Rev. B), M
 ---
 
 ## Phase 0 — Physical characterization
+
 _Gate: complete physical documentation of all hardware before any design work is committed_
 
 This phase is the foundation for everything downstream. Decisions made in Calibre, Case, and Reserve are only as good as the measurements they're based on. Phase 0 work should be committed to the repository as it is completed. Phase 0 feeds both the Theseus and Greenfield tracks.
@@ -60,6 +61,7 @@ This phase is the foundation for everything downstream. Decisions made in Calibr
 ---
 
 ## Phase 1 — Theseus Track: PCB reproduction
+
 _Gate: PCB tracing complete for target revision; component catalogue complete; fabrication files verified_
 
 Phase 1 produces a reproducible Calibre PCB that allows a builder to transfer components from an original MX1000 mainboard to a new substrate, extending the life of existing hardware. Two deliverables are produced within this phase:
@@ -90,6 +92,7 @@ The roller PCB (already dissected from Mouse 2) is a candidate for early reprodu
 ---
 
 ## Phase 2 — Theseus Track: modern drop-in substitution
+
 _Gate: Phase 1 boards fabricated and component transfer verified on at least one unit_
 
 Phase 2 identifies and substitutes modern, currently-sourceable components for original parts that are difficult or impossible to obtain, where substitution can be achieved without schematic changes or with only minor, backwards-compatible modifications. Bespoke components — the laser/sensor assembly and the RF module — are still donor-sourced at this stage and are not replaced.
@@ -113,7 +116,8 @@ The goal is a Calibre board that a builder could populate entirely from new stoc
 ---
 
 ## Phase 3 — Theseus Track: schematic completion and functional mapping
-*Gate: complete schematic of target revision fully traced and verified; all subsystems functionally understood to the level required to begin non-drop-in component substitution*
+
+_Gate: complete schematic of target revision fully traced and verified; all subsystems functionally understood to the level required to begin non-drop-in component substitution_
 
 Phase 3 is the gate between the Theseus and Greenfield tracks. It is not primarily a fabrication phase — it is a knowledge phase. The deliverable is a complete, verified schematic and a functional understanding of every subsystem deep enough that bespoke components (sensor, RF module) could begin to be replaced with non-drop-in modern equivalents.
 
@@ -144,6 +148,7 @@ This gate condition may be met incrementally across Phases 1 and 2; Phase 3 form
 ---
 
 ## Phase 4 — Greenfield Track: Calibre first generation design
+
 _Gate: optical geometry confirmed, all physical measurements complete, component shortlist finalized_
 
 Phase 4 produces a functional Calibre PCB that fits the MX1000 shell and provides basic BT HID mouse functionality. The design philosophy is modular from the start: the nRF52840 radio is a daughterboard using an off-the-shelf certified module (nice!nano, Seeed XIAO nRF52840, or equivalent), not integrated into the mainboard. This keeps RF certification out of scope for gen one and allows the radio module to be swapped independently.
@@ -183,6 +188,7 @@ Phase 4 produces a functional Calibre PCB that fits the MX1000 shell and provide
 ---
 
 ## Phase 5 — Greenfield Track: Calibre bring-up and iteration
+
 _Gate: Calibre PCB fabricated and components in hand_
 
 Phase 5 is bench work. The assembled Calibre board is brought up incrementally — power first, then MCU, then sensor, then wireless, then switches. Each subsystem is verified independently before integrating the next. At the end of Phase 5, Calibre functions as a working wireless mouse inside the MX1000 shell.
@@ -225,6 +231,7 @@ Phase 5 is bench work. The assembled Calibre board is brought up incrementally �
 ---
 
 ## Phase 6 — Greenfield Track: integration and refinement
+
 _Gate: Calibre functional inside MX1000 shell; Reserve dock functional_
 
 Phase 6 integrates all components into a coherent system and begins the refinement work that distinguishes a restoration from a hack. The original MX1000 shell is still in use at this stage — Case is in development but not yet production-ready.
@@ -268,6 +275,7 @@ Phase 6 integrates all components into a coherent system and begins the refineme
 ---
 
 ## Phase 7 — Greenfield Track: release preparation
+
 _Gate: full system functional and refined; Case and Reserve in producible form_
 
 Phase 7 prepares Millennium for public release as a usable open source project. The emphasis is on reproducibility — another builder should be able to fabricate a Calibre board, print a Case, and assemble a working system from the repository alone.
@@ -297,10 +305,10 @@ These are explicitly out of scope for the initial release but inform architectur
 
 ## Current blockers summary
 
-| Blocker | Blocks | Resolution |
-|---------|--------|------------|
-| 3D scanning spray not yet obtained | 3D scanning | Purchase locally |
-| SDR hardware not acquired | 27 MHz RF capture | Purchase; defer to Phase 6 |
-| Physical measurements not yet taken | Calibre layout, PAW3395 confirmation, Case modeling, Reserve design | Execute Phase 0 measurement work |
-| PCB tracing not yet complete | Phase 1 schematic entry; Phase 3 gate | Execute as part of Phase 0 documentation work |
-| Donor unit availability for component transfer TBD | Phase 1 component transfer test | Determine which specimen is sacrificed for mainboard dissection |
+| Blocker                                            | Blocks                                                              | Resolution                                                      |
+| -------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- |
+| 3D scanning spray not yet obtained                 | 3D scanning                                                         | Purchase locally                                                |
+| SDR hardware not acquired                          | 27 MHz RF capture                                                   | Purchase; defer to Phase 6                                      |
+| Physical measurements not yet taken                | Calibre layout, PAW3395 confirmation, Case modeling, Reserve design | Execute Phase 0 measurement work                                |
+| PCB tracing not yet complete                       | Phase 1 schematic entry; Phase 3 gate                               | Execute as part of Phase 0 documentation work                   |
+| Donor unit availability for component transfer TBD | Phase 1 component transfer test                                     | Determine which specimen is sacrificed for mainboard dissection |

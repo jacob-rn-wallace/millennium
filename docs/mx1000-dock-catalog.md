@@ -24,15 +24,15 @@ The C-BN34 carries no FCC ID of its own. Receivers operating below 30 MHz are ex
 
 The Millennium project's physical collection includes **seven charging docks**, designated **Dock 1** through **Dock 7**. Each dock is numbered to match its paired mouse specimen (see [`mx1000-variant-catalog.md`](mx1000-variant-catalog.md)). Docks 1, 2, and 3 were acquired paired with their corresponding mice; Docks 4–7 were acquired together as a lot alongside Mice 4–7, with original pairings unknown. For Docks 4–7, pairing assignments were determined by manufacture-date analysis of dock serial numbers against decoded mouse serial numbers and PIDs, as documented below.
 
-| Shorthand | P/N | M/N | S/N | Manufacture week | Main PCB | Main P/N | Power PCB | Paired mouse | Pairing basis | Current status |
-|-----------|-----|-----|-----|-----------------|----------|----------|-----------|--------------|---------------|----------------|
-| **Dock 1** | 831145-0000 | C-BN34 | LZB44252090 | Week 42, 2004 (Oct 11–17) | Rev. A | 201797-0000 | Rev. B | Mouse 1 | Acquired paired | In collection; Mouse 1's boxed retail unit |
-| **Dock 2** | 831231-0000 | C-BO34 | LNA50713319 | Week 7, 2005 (Feb 14–20) | Rev. A | 201814-0??? | Rev. B | Mouse 2 | Acquired paired | In collection; MX 3100 bundle dock |
-| **Dock 3** | 831145-0000 | C-BN34 | LZB44150762 | Week 41, 2004 (Oct 4–10) | Rev. A | 201797-0000 | Rev. B | Mouse 3 | Acquired paired; serial matches mouse | In collection |
-| **Dock 4** | 831145-0000 | C-BN34 | LZ713B1 | Week 13, 2007 (Mar 26–Apr 1) | Rev. A | 201797-0000 | Rev. A | Mouse 4 | By elimination; not original pairing | In collection |
-| **Dock 5** | 831145-0000 | C-BN34 | LNA45100135 | Week 51, 2004 (Dec 20–26) | Rev. A | 201797-0000 | Rev. B | Mouse 5 | Provisional; condition-matched | In collection |
-| **Dock 6** | 831145-0000 | C-BN34 | LZ549BC | Week 49, 2005 (Dec 5–11) | Rev. A | 201797-0000 | Rev. A | Mouse 6 | Provisional; manufacture-date matched | In collection |
-| **Dock 7** | 831145-0000 | C-BN34 | LZ603BC | Week 3, 2006 (Jan 15–21) | Rev. A | 201797-0000 | Rev. A | Mouse 7 | Manufacture-date matched; high confidence | In collection |
+| Shorthand  | P/N         | M/N    | S/N         | Manufacture week             | Main PCB | Main P/N    | Power PCB | Paired mouse | Pairing basis                             | Current status                             |
+| ---------- | ----------- | ------ | ----------- | ---------------------------- | -------- | ----------- | --------- | ------------ | ----------------------------------------- | ------------------------------------------ |
+| **Dock 1** | 831145-0000 | C-BN34 | LZB44252090 | Week 42, 2004 (Oct 11–17)    | Rev. A   | 201797-0000 | Rev. B    | Mouse 1      | Acquired paired                           | In collection; Mouse 1's boxed retail unit |
+| **Dock 2** | 831231-0000 | C-BO34 | LNA50713319 | Week 7, 2005 (Feb 14–20)     | Rev. A   | 201814-0??? | Rev. B    | Mouse 2      | Acquired paired                           | In collection; MX 3100 bundle dock         |
+| **Dock 3** | 831145-0000 | C-BN34 | LZB44150762 | Week 41, 2004 (Oct 4–10)     | Rev. A   | 201797-0000 | Rev. B    | Mouse 3      | Acquired paired; serial matches mouse     | In collection                              |
+| **Dock 4** | 831145-0000 | C-BN34 | LZ713B1     | Week 13, 2007 (Mar 26–Apr 1) | Rev. A   | 201797-0000 | Rev. A    | Mouse 4      | By elimination; not original pairing      | In collection                              |
+| **Dock 5** | 831145-0000 | C-BN34 | LNA45100135 | Week 51, 2004 (Dec 20–26)    | Rev. A   | 201797-0000 | Rev. B    | Mouse 5      | Provisional; condition-matched            | In collection                              |
+| **Dock 6** | 831145-0000 | C-BN34 | LZ549BC     | Week 49, 2005 (Dec 5–11)     | Rev. A   | 201797-0000 | Rev. A    | Mouse 6      | Provisional; manufacture-date matched     | In collection                              |
+| **Dock 7** | 831145-0000 | C-BN34 | LZ603BC     | Week 3, 2006 (Jan 15–21)     | Rev. A   | 201797-0000 | Rev. A    | Mouse 7      | Manufacture-date matched; high confidence | In collection                              |
 
 ---
 
@@ -48,10 +48,10 @@ The main board is **Rev. A** on every specimen in the collection, including Dock
 
 The power board shows a **revision split** across the collection:
 
-| Power PCB | Docks | Manufacture weeks |
-|-----------|-------|-------------------|
-| Rev. B | Docks 1, 2, 3, 5 | Week 41/2004 through week 7/2005 |
-| Rev. A | Docks 4, 6, 7 | Week 49/2005 through week 13/2007 |
+| Power PCB | Docks            | Manufacture weeks                 |
+| --------- | ---------------- | --------------------------------- |
+| Rev. B    | Docks 1, 2, 3, 5 | Week 41/2004 through week 7/2005  |
+| Rev. A    | Docks 4, 6, 7    | Week 49/2005 through week 13/2007 |
 
 The earlier production units carry Rev. B and the later units carry Rev. A — an apparent reversal of the expected revision order. The power board therefore has its own independent revision sequence, unrelated to the main board's. The most likely explanation is a design simplification or cost reduction introduced during the production run that reset or restarted the revision designation. The functional implications, if any, are undocumented.
 
@@ -81,11 +81,11 @@ Two docks in the collection carry an **LNA** serial prefix rather than the stand
 
 Decoded, the three known LNA units cluster into a narrow eight-week window:
 
-| Serial | Decoded date | Sequence |
-|--------|-------------|----------|
-| LNA45100135 | Week 51, 2004 (Dec 20–26) | 00135 |
-| LNA50505952 | Week 5, 2005 (Jan 31–Feb 6) | 05952 |
-| LNA50713319 | Week 7, 2005 (Feb 14–20) | 13319 |
+| Serial      | Decoded date                | Sequence |
+| ----------- | --------------------------- | -------- |
+| LNA45100135 | Week 51, 2004 (Dec 20–26)   | 00135    |
+| LNA50505952 | Week 5, 2005 (Jan 31–Feb 6) | 05952    |
+| LNA50713319 | Week 7, 2005 (Feb 14–20)    | 13319    |
 
 The production sequence numbers increase monotonically across all three examples as the decoded dates advance — consistent with a single continuous production run rather than three independent batches. The sequence number on the earliest example (00135) is characteristic of a run's opening days.
 
@@ -109,7 +109,6 @@ Manufacture-date matching between dock and mouse serials was the primary method 
 
 Dock 3's S/N (LZB44150762) is identical to Mouse 3's S/N (LZB44150762). This is not a transcription error — it indicates the dock and mouse were **serialized together as a unit** at the factory, sharing a production sequence number. This is consistent with retail packaging of the dock and mouse as a matched set and provides strong corroborating evidence that both identifiers were applied at final assembly rather than at separate sub-assembly stages.
 
-
 ## Open questions
 
 Whether the **C-BN34 REV A0** label marking on Dock 1 is the only revision ever produced, or whether later units carry higher revision designations, has not been established. The internal wiring variant documented in community sources[^2] suggests at least a silent revision occurred, but no label evidence for a formal REV A1 or later has been observed.
@@ -125,6 +124,9 @@ No ODM or contract manufacturer name has been linked to the LNA prefix in any pu
 ## References
 
 [^1]: fcc.report — FCC ID DZL201758 (M-RAG97 RF Cordless Mouse, Logitech Inc.). <https://fcc.report/FCC-ID/DZL201758>
+
 [^2]: benvallack.com — Easy fix for Logitech MX Revolution not charging (documents both C-BN34 wiring variants). <https://benvallack.com/notebook/easy-fix-for-logitech-mx-revolution-not-charging/>
+
 [^3]: 47 C.F.R. § 15.101(b) (2004). Only receivers operating in the 30–960 MHz range, CB receivers, and radar detectors are subject to equipment authorization under Subpart B; the C-BN34, operating at 27 MHz, falls below the lower bound of that range. <https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-B/section-15.101>
+
 [^4]: JustAnswer — Customer support thread referencing Logitech cordless desktop receiver M/N C-B034, S/N LNA50505952 (2014). <https://www.justanswer.com/computer-hardware/8i4zs-cordless-desktop-receiver-m-n-c-b034-s-n-lna.html>

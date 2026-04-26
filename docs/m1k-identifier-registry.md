@@ -12,12 +12,12 @@ M1K-PPTTBBVVVV
 
 All identifiers begin with the family prefix `M1K`, followed by a hyphen, followed by a ten-digit numeric string with no internal separators. The ten digits are divided into four fixed-width segments:
 
-| Segment | Digits | Width | Meaning |
-|---------|--------|-------|---------|
-| PP | 1–2 | 2 | Peripheral |
-| TT | 3–4 | 2 | Track |
-| BB | 5–6 | 2 | Board |
-| VVVV | 7–10 | 4 | Version |
+| Segment | Digits | Width | Meaning    |
+| ------- | ------ | ----- | ---------- |
+| PP      | 1–2    | 2     | Peripheral |
+| TT      | 3–4    | 2     | Track      |
+| BB      | 5–6    | 2     | Board      |
+| VVVV    | 7–10   | 4     | Version    |
 
 Segment boundaries are implicit and fixed — no separators appear within the numeric string. An identifier can be parsed unambiguously by position alone.
 
@@ -33,32 +33,32 @@ The ITA2 standard is publicly documented and requires no proprietary reference t
 
 Identifies the Millennium subsystem the board belongs to.
 
-| Value | ITA2 character | Subsystem |
-|-------|---------------|-----------|
-| 14 | C | Calibre (replacement PCB) |
-| 10 | R | Reserve (replacement dock) |
-| 05 | S | Case (replacement shells) |
-| 16 | T | Regulator (host configuration software) |
+| Value | ITA2 character | Subsystem                               |
+| ----- | -------------- | --------------------------------------- |
+| 14    | C              | Calibre (replacement PCB)               |
+| 10    | R              | Reserve (replacement dock)              |
+| 05    | S              | Case (replacement shells)               |
+| 16    | T              | Regulator (host configuration software) |
 
 ### Track (TT)
 
 Identifies the development track the design belongs to.
 
-| Value | ITA2 character | Track |
-|-------|---------------|-------|
-| 16 | T | Theseus Track |
-| 26 | G | Greenfield Track |
+| Value | ITA2 character | Track            |
+| ----- | -------------- | ---------------- |
+| 16    | T              | Theseus Track    |
+| 26    | G              | Greenfield Track |
 
 ### Board (BB)
 
 Identifies the specific PCB within the subsystem.
 
-| Value | ITA2 character | Board |
-|-------|---------------|-------|
-| 28 | M | Main board |
-| 10 | R | Roller board |
-| 16 | T | Thumb board |
-| 18 | L | Laser board |
+| Value | ITA2 character | Board        |
+| ----- | -------------- | ------------ |
+| 28    | M              | Main board   |
+| 10    | R              | Roller board |
+| 16    | T              | Thumb board  |
+| 18    | L              | Laser board  |
 
 The board segment may be allocated differently by subsystems whose board taxonomy differs from Calibre's. In all cases the encoding method remains the same: a two-digit ITA2 decimal value. Allocations for Reserve, Case, and Regulator boards will be documented here as those subsystems develop.
 
@@ -73,11 +73,11 @@ A four-digit sequential number assigned in order of design creation within a giv
 Identifiers are reserved here before design work begins. A row must be added to this table before committing any new board design to the repository.
 
 | Identifier | Peripheral | Track | Board | Description | Status |
-|------------|-----------|-------|-------|-------------|--------|
+| ---------- | ---------- | ----- | ----- | ----------- | ------ |
 
 ---
 
 ## Assignment log
 
 | Identifier | Date reserved | Reserved by | Notes |
-|------------|--------------|-------------|-------|
+| ---------- | ------------- | ----------- | ----- |

@@ -16,15 +16,15 @@ Three distinct 2nd identifier formats have been observed across the specimen set
 
 ### Format distribution by part type
 
-| Part type | Identifier format |
-|-----------|------------------|
-| Parts with P/N, Mice 3–7 | CAV.x |
-| Parts with P/N, Mice 1–2 | SZ |
-| Parts without P/N | Bare number |
-| Battery indicator window, Mice 1–4 | Bare number |
-| Battery indicator window, Mice 5–7 | SZ |
-| Scroll wheel surround, Mouse 1 | SZ |
-| Scroll wheel surround, Mouse 3 | None observed |
+| Part type                          | Identifier format |
+| ---------------------------------- | ----------------- |
+| Parts with P/N, Mice 3–7           | CAV.x             |
+| Parts with P/N, Mice 1–2           | SZ                |
+| Parts without P/N                  | Bare number       |
+| Battery indicator window, Mice 1–4 | Bare number       |
+| Battery indicator window, Mice 5–7 | SZ                |
+| Scroll wheel surround, Mouse 1     | SZ                |
+| Scroll wheel surround, Mouse 3     | None observed     |
 
 The battery indicator window (402449-0000) is anomalous in that it carries a P/N but uses the bare number format on Mice 1–4 and the SZ format on Mice 5–7, rather than CAV.x on any specimen. The scroll wheel surround uses bare numbers on Mice 2–7, SZ on Mouse 1, and has no observed identifier on Mouse 3.
 
@@ -40,132 +40,132 @@ The battery and battery cover are bonded together as a unit. During PCB transpla
 
 ### Mouse 1 (LZC51411902, week 14/2005, Gunmetal Silver)
 
-| Part term | P/N | 2nd identifier |
-|-----------|-----|---------------|
-| Bottom plate | 402443-0000 | SZ-3 |
-| Battery cover | 003107-0000 | CAV.1 ⚠ |
-| Main body | 402442-0000 | SZ2 |
-| Forward/back rockers pivot | 003109-0000 | CAV.3 |
-| Top shell | 402444-0000 | SZ4 |
-| Battery indicator window | 402449-0000 | 1 |
-| Application switch button | — | 2 |
-| Scroll wheel cage | — | 3 |
-| Scroll wheel pivot clip | — | 4 |
-| Scroll wheel surround | — | SZ1 |
-| Cruise control rockers | — | 2 |
-| Forward/back rockers | — | 2 |
+| Part term                  | P/N         | 2nd identifier |
+| -------------------------- | ----------- | -------------- |
+| Bottom plate               | 402443-0000 | SZ-3           |
+| Battery cover              | 003107-0000 | CAV.1 ⚠        |
+| Main body                  | 402442-0000 | SZ2            |
+| Forward/back rockers pivot | 003109-0000 | CAV.3          |
+| Top shell                  | 402444-0000 | SZ4            |
+| Battery indicator window   | 402449-0000 | 1              |
+| Application switch button  | —           | 2              |
+| Scroll wheel cage          | —           | 3              |
+| Scroll wheel pivot clip    | —           | 4              |
+| Scroll wheel surround      | —           | SZ1            |
+| Cruise control rockers     | —           | 2              |
+| Forward/back rockers       | —           | 2              |
 
 ⚠ Battery cover provenance uncertain — may not be original to this shell.
 
 ### Mouse 2 (LZB50753012, week 7/2005, Dark Blue)
 
-| Part term | P/N | 2nd identifier |
-|-----------|-----|---------------|
-| Bottom plate | 402443-0000 | SZ-3 |
-| Battery cover | 003107-0000 | CAV.1 ⚠ |
-| Main body | 402442-0000 | SZ4 |
-| Forward/back rockers pivot | 003109-0000 | CAV.3 |
-| Top shell | 402444-0000 | SZ1 |
-| Battery indicator window | 402449-0000 | 2 |
-| Application switch button | — | 4 |
-| Scroll wheel cage | — | 2 |
-| Scroll wheel pivot clip | — | 1 |
-| Scroll wheel surround | — | 4 |
-| Cruise control rockers | — | 3 |
-| Forward/back rockers | — | 4 |
+| Part term                  | P/N         | 2nd identifier |
+| -------------------------- | ----------- | -------------- |
+| Bottom plate               | 402443-0000 | SZ-3           |
+| Battery cover              | 003107-0000 | CAV.1 ⚠        |
+| Main body                  | 402442-0000 | SZ4            |
+| Forward/back rockers pivot | 003109-0000 | CAV.3          |
+| Top shell                  | 402444-0000 | SZ1            |
+| Battery indicator window   | 402449-0000 | 2              |
+| Application switch button  | —           | 4              |
+| Scroll wheel cage          | —           | 2              |
+| Scroll wheel pivot clip    | —           | 1              |
+| Scroll wheel surround      | —           | 4              |
+| Cruise control rockers     | —           | 3              |
+| Forward/back rockers       | —           | 4              |
 
 ⚠ Battery cover provenance uncertain — may not be original to this shell.
 
 ### Mouse 3 (LZB44150762, week 41/2004, Midnight Black)
 
-| Part term | P/N | 2nd identifier |
-|-----------|-----|---------------|
-| Bottom plate | 402443-0000 | CAV.1 |
-| Battery cover | 003107-0000 | CAV.1 |
-| Main body | 402442-0000 | CAV.1 |
-| Forward/back rockers pivot | 003109-0000 | CAV.2 |
-| Top shell | 402444-0000 | CAV.3 |
-| Battery indicator window | 402449-0000 | 2 |
-| Application switch button | — | 4 |
-| Scroll wheel cage | — | 3 |
-| Scroll wheel pivot clip | — | 3 |
-| Scroll wheel surround | — | None observed† |
-| Cruise control rockers | — | 2 |
-| Forward/back rockers | — | 3 |
+| Part term                  | P/N         | 2nd identifier |
+| -------------------------- | ----------- | -------------- |
+| Bottom plate               | 402443-0000 | CAV.1          |
+| Battery cover              | 003107-0000 | CAV.1          |
+| Main body                  | 402442-0000 | CAV.1          |
+| Forward/back rockers pivot | 003109-0000 | CAV.2          |
+| Top shell                  | 402444-0000 | CAV.3          |
+| Battery indicator window   | 402449-0000 | 2              |
+| Application switch button  | —           | 4              |
+| Scroll wheel cage          | —           | 3              |
+| Scroll wheel pivot clip    | —           | 3              |
+| Scroll wheel surround      | —           | None observed† |
+| Cruise control rockers     | —           | 2              |
+| Forward/back rockers       | —           | 3              |
 
 † The scroll wheel surround on Mouse 3 is the only part/specimen combination in the entire dataset with no observed 2nd identifier. The marking location was checked twice; no marking was found. Wear cannot be fully ruled out, but absence is considered confirmed with high confidence.
 
 ### Mouse 4 (LZC45101572, week 51/2004, Gunmetal Silver)
 
-| Part term | P/N | 2nd identifier |
-|-----------|-----|---------------|
-| Bottom plate | 402443-0000 | CAV.2 |
-| Battery cover | 003107-0000 | CAV.1 ⚠ |
-| Main body | 402442-0000 | CAV.2 |
-| Forward/back rockers pivot | 003109-0000 | CAV.2 |
-| Top shell | 402444-0000 | CAV.4 |
-| Battery indicator window | 402449-0000 | 2 |
-| Application switch button | — | 2 |
-| Scroll wheel cage | — | 4 |
-| Scroll wheel pivot clip | — | 1 |
-| Scroll wheel surround | — | 4 |
-| Cruise control rockers | — | 3 |
-| Forward/back rockers | — | 1 |
+| Part term                  | P/N         | 2nd identifier |
+| -------------------------- | ----------- | -------------- |
+| Bottom plate               | 402443-0000 | CAV.2          |
+| Battery cover              | 003107-0000 | CAV.1 ⚠        |
+| Main body                  | 402442-0000 | CAV.2          |
+| Forward/back rockers pivot | 003109-0000 | CAV.2          |
+| Top shell                  | 402444-0000 | CAV.4          |
+| Battery indicator window   | 402449-0000 | 2              |
+| Application switch button  | —           | 2              |
+| Scroll wheel cage          | —           | 4              |
+| Scroll wheel pivot clip    | —           | 1              |
+| Scroll wheel surround      | —           | 4              |
+| Cruise control rockers     | —           | 3              |
+| Forward/back rockers       | —           | 1              |
 
 ⚠ Battery cover provenance uncertain — may not be original to this shell.
 
 ### Mouse 5 (LZ549B4, week 49/2005, Gunmetal Silver)
 
-| Part term | P/N | 2nd identifier |
-|-----------|-----|---------------|
-| Bottom plate | 402443-0000 | CAV.2 |
-| Battery cover | 003107-0000 | CAV.4 ⚠ |
-| Main body | 402442-0000 | CAV.1 |
-| Forward/back rockers pivot | 003109-0000 | CAV.2 |
-| Top shell | 402444-0000 | CAV.4 |
-| Battery indicator window | 402449-0000 | SZ3 |
-| Application switch button | — | 4 |
-| Scroll wheel cage | — | 1 |
-| Scroll wheel pivot clip | — | 1 |
-| Scroll wheel surround | — | 4 |
-| Cruise control rockers | — | 4 |
-| Forward/back rockers | — | 4 |
+| Part term                  | P/N         | 2nd identifier |
+| -------------------------- | ----------- | -------------- |
+| Bottom plate               | 402443-0000 | CAV.2          |
+| Battery cover              | 003107-0000 | CAV.4 ⚠        |
+| Main body                  | 402442-0000 | CAV.1          |
+| Forward/back rockers pivot | 003109-0000 | CAV.2          |
+| Top shell                  | 402444-0000 | CAV.4          |
+| Battery indicator window   | 402449-0000 | SZ3            |
+| Application switch button  | —           | 4              |
+| Scroll wheel cage          | —           | 1              |
+| Scroll wheel pivot clip    | —           | 1              |
+| Scroll wheel surround      | —           | 4              |
+| Cruise control rockers     | —           | 4              |
+| Forward/back rockers       | —           | 4              |
 
 ⚠ Battery cover provenance uncertain — may not be original to this shell.
 
 ### Mouse 6 (LZ549B4, week 49/2005, Gunmetal Silver)
 
-| Part term | P/N | 2nd identifier |
-|-----------|-----|---------------|
-| Bottom plate | 402443-0000 | CAV.4 |
-| Battery cover | 003107-0000 | CAV.3 |
-| Main body | 402442-0000 | CAV.2 |
-| Forward/back rockers pivot | 003109-0000 | CAV.4 |
-| Top shell | 402444-0000 | CAV.3 |
-| Battery indicator window | 402449-0000 | SZ2 |
-| Application switch button | — | 2 |
-| Scroll wheel cage | — | 1 |
-| Scroll wheel pivot clip | — | 1 |
-| Scroll wheel surround | — | 4 |
-| Cruise control rockers | — | 3 |
-| Forward/back rockers | — | 4 |
+| Part term                  | P/N         | 2nd identifier |
+| -------------------------- | ----------- | -------------- |
+| Bottom plate               | 402443-0000 | CAV.4          |
+| Battery cover              | 003107-0000 | CAV.3          |
+| Main body                  | 402442-0000 | CAV.2          |
+| Forward/back rockers pivot | 003109-0000 | CAV.4          |
+| Top shell                  | 402444-0000 | CAV.3          |
+| Battery indicator window   | 402449-0000 | SZ2            |
+| Application switch button  | —           | 2              |
+| Scroll wheel cage          | —           | 1              |
+| Scroll wheel pivot clip    | —           | 1              |
+| Scroll wheel surround      | —           | 4              |
+| Cruise control rockers     | —           | 3              |
+| Forward/back rockers       | —           | 4              |
 
 ### Mouse 7 (LZ603B4, week 3/2006, Gunmetal Silver)
 
-| Part term | P/N | 2nd identifier |
-|-----------|-----|---------------|
-| Bottom plate | 402443-0000 | CAV.1 |
-| Battery cover | 003107-0000 | CAV.4 |
-| Main body | 402442-0000 | CAV.1 |
-| Forward/back rockers pivot | 003109-0000 | CAV.3 |
-| Top shell | 402444-0000 | CAV.4 |
-| Battery indicator window | 402449-0000 | SZ4 |
-| Application switch button | — | 4 |
-| Scroll wheel cage | — | 2 |
-| Scroll wheel pivot clip | — | 3 |
-| Scroll wheel surround | — | 3 |
-| Cruise control rockers | — | 1 |
-| Forward/back rockers | — | 2 |
+| Part term                  | P/N         | 2nd identifier |
+| -------------------------- | ----------- | -------------- |
+| Bottom plate               | 402443-0000 | CAV.1          |
+| Battery cover              | 003107-0000 | CAV.4          |
+| Main body                  | 402442-0000 | CAV.1          |
+| Forward/back rockers pivot | 003109-0000 | CAV.3          |
+| Top shell                  | 402444-0000 | CAV.4          |
+| Battery indicator window   | 402449-0000 | SZ4            |
+| Application switch button  | —           | 4              |
+| Scroll wheel cage          | —           | 2              |
+| Scroll wheel pivot clip    | —           | 3              |
+| Scroll wheel surround      | —           | 3              |
+| Cruise control rockers     | —           | 1              |
+| Forward/back rockers       | —           | 2              |
 
 ---
 

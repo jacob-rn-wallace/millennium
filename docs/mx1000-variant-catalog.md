@@ -12,15 +12,15 @@ All PCB revision data reflects physical inspection of main, roller, and thumb PC
 
 **PCB transplant convention:** the three PCBs of any given mouse (main, roller, and thumb) are treated as an inseparable unit for both documentation and physical transplant purposes. The main and roller PCBs are effectively inseparable in practice — desoldering them without lifting pads has proven unreliable — and the thumb PCB is kept with them for consistency. Any transplant operation moves all three boards together. When a transplant has occurred, the PCB origin column records which mouse the boards originated from, preserving full traceability of manufacture date, serial/PID, and revision data independently of the chassis they currently occupy.
 
-| Shorthand | Part number | Color | ID | ID type | Main PCB | Roller PCB | Thumb PCB | PCB origin | Manufacture date | Current status |
-|-----------|-------------|-------|----|---------|----------|------------|-----------|------------|-----------------|----------------|
-| **Mouse 1** | 852152-0200 | Gunmetal Silver | LZC51411902 | S/N | Rev. B | Rev. B | Rev. A | Mouse 5 (LZ549B4, week 49/2005) | Week 14, 2005 (Apr 4–10) | Functional; PCB transplant April 19, 2026 |
-| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | S/N | Rev. B | Rev. B | Rev. A | Mouse 4 (LZC45101572, week 51/2004) | Week 7, 2005 (Feb 14–20) | Functional; PCB transplant April 19, 2026 |
-| **Mouse 3** | 852152-1000 | Midnight Black | LZB44150762 | S/N | Rev. A | Rev. A | Rev. A | Original | Week 41, 2004 (Oct 4–10) | Benched; exhibits laser latency bug |
-| **Mouse 4** | 852152-0000 | Gunmetal Silver | LZC45101572 | S/N | Rev. B | Rev. B | Rev. A | Donated to Mouse 2 (April 19, 2026) | Week 51, 2004 (Dec 13–19) | Shell only |
-| **Mouse 5** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Donated to Mouse 1 (April 19, 2026) | Week 49, 2005 (Dec 5–11) | Shell only; heavily scuffed label and sensor sticker |
-| **Mouse 6** | 852152-0100 | Gunmetal Silver | LZ549B4 | PID | Rev. B | Rev. B | Rev. A | Original | Week 49, 2005 (Dec 5–11) | Functional; label and sensor sticker in good condition |
-| **Mouse 7** | 852152-0200 | Gunmetal Silver | LZ603B4 | PID | Rev. B | Rev. B | Rev. A | Original | Week 3, 2006 (Jan 16–22) | Functional |
+| Shorthand   | Part number | Color                      | ID          | ID type | Main PCB | Roller PCB | Thumb PCB | PCB origin                          | Manufacture date          | Current status                                         |
+| ----------- | ----------- | -------------------------- | ----------- | ------- | -------- | ---------- | --------- | ----------------------------------- | ------------------------- | ------------------------------------------------------ |
+| **Mouse 1** | 852152-0200 | Gunmetal Silver            | LZC51411902 | S/N     | Rev. B   | Rev. B     | Rev. A    | Mouse 5 (LZ549B4, week 49/2005)     | Week 14, 2005 (Apr 4–10)  | Functional; PCB transplant April 19, 2026              |
+| **Mouse 2** | 852376-0000 | Dark Blue (MX 3100 bundle) | LZB50753012 | S/N     | Rev. B   | Rev. B     | Rev. A    | Mouse 4 (LZC45101572, week 51/2004) | Week 7, 2005 (Feb 14–20)  | Functional; PCB transplant April 19, 2026              |
+| **Mouse 3** | 852152-1000 | Midnight Black             | LZB44150762 | S/N     | Rev. A   | Rev. A     | Rev. A    | Original                            | Week 41, 2004 (Oct 4–10)  | Benched; exhibits laser latency bug                    |
+| **Mouse 4** | 852152-0000 | Gunmetal Silver            | LZC45101572 | S/N     | Rev. B   | Rev. B     | Rev. A    | Donated to Mouse 2 (April 19, 2026) | Week 51, 2004 (Dec 13–19) | Shell only                                             |
+| **Mouse 5** | 852152-0100 | Gunmetal Silver            | LZ549B4     | PID     | Rev. B   | Rev. B     | Rev. A    | Donated to Mouse 1 (April 19, 2026) | Week 49, 2005 (Dec 5–11)  | Shell only; heavily scuffed label and sensor sticker   |
+| **Mouse 6** | 852152-0100 | Gunmetal Silver            | LZ549B4     | PID     | Rev. B   | Rev. B     | Rev. A    | Original                            | Week 49, 2005 (Dec 5–11)  | Functional; label and sensor sticker in good condition |
+| **Mouse 7** | 852152-0200 | Gunmetal Silver            | LZ603B4     | PID     | Rev. B   | Rev. B     | Rev. A    | Original                            | Week 3, 2006 (Jan 16–22)  | Functional                                             |
 
 Mice 5 and 6 share an identical PID (LZ549B4) and part number — consistent with PIDs being lot-level identifiers rather than per-unit serials, as documented in [`mx1000-serial-number-decoding.md`](mx1000-serial-number-decoding.md). They are distinguished by physical condition. PCB revision data for Mice 4 and 5 was confirmed prior to transplant and remains in the record; their boards now reside in Mice 2 and 1 respectively.
 
@@ -74,30 +74,30 @@ A 2006 Apple Community discussion documented the Midnight as sold by Italian (ep
 
 ### Retail SKUs (on packaging)
 
-| SKU | Variant | Market | Color |
-|-----|---------|--------|-------|
-| **931175-0403** | MX1000 RF | US / Americas | Gunmetal Silver ("Blue/Black") |
-| **931175-0914** | MX1000 RF | Continental Europe | Gunmetal Silver |
-| **931175-0120** | MX1000 RF | United Kingdom | Gunmetal Silver ("Silver/Black") |
-| **931272-0914** | MX1000 Midnight RF | Europe | Onyx Black |
-| **931518-0403** | MX1000 Bluetooth | US (in bundles) | — |
-| **852384-1000** | MX1000 Bluetooth | International (in bundles) | "Black & Grey" |
+| SKU             | Variant            | Market                     | Color                            |
+| --------------- | ------------------ | -------------------------- | -------------------------------- |
+| **931175-0403** | MX1000 RF          | US / Americas              | Gunmetal Silver ("Blue/Black")   |
+| **931175-0914** | MX1000 RF          | Continental Europe         | Gunmetal Silver                  |
+| **931175-0120** | MX1000 RF          | United Kingdom             | Gunmetal Silver ("Silver/Black") |
+| **931272-0914** | MX1000 Midnight RF | Europe                     | Onyx Black                       |
+| **931518-0403** | MX1000 Bluetooth   | US (in bundles)            | —                                |
+| **852384-1000** | MX1000 Bluetooth   | International (in bundles) | "Black & Grey"                   |
 
 Logitech's suffix convention: **-0403** = US/Americas, **-0914** = Continental Europe, **-0120** = United Kingdom.
 
 ### Device part numbers (on hardware labels)
 
-| Part Number | Model | Notes |
-|-------------|-------|-------|
-| **852152-0000** | M-RAG97 (RF) | Gunmetal Silver — commonly observed on US units |
+| Part Number     | Model        | Notes                                                                                         |
+| --------------- | ------------ | --------------------------------------------------------------------------------------------- |
+| **852152-0000** | M-RAG97 (RF) | Gunmetal Silver — commonly observed on US units                                               |
 | **852152-0100** | M-RAG97 (RF) | Gunmetal Silver — two confirmed specimens (Mice 5 and 6); regional assignment not established |
-| **852152-0300** | M-RAG97 (RF) | Gunmetal Silver — observed on UK/European units |
-| **852152-1000** | M-RAG97 (RF) | Onyx Black "Midnight" — observed on units sold in both North America and Europe |
-| **852376-0000** | M-RAG97 (RF) | Dark Blue — MX 3100 bundle variant; not observed in standalone retail |
-| **852384-1000** | M-RBA97 (BT) | Bluetooth version |
-| **831145-0000** | C-BN34 | Charging dock / RF receiver |
-| **832243-0000** | C-UV35 | Bluetooth USB transceiver |
-| **190247-1000** | L-LB2 | Battery (also 190247-0000, 190247-B000) |
+| **852152-0300** | M-RAG97 (RF) | Gunmetal Silver — observed on UK/European units                                               |
+| **852152-1000** | M-RAG97 (RF) | Onyx Black "Midnight" — observed on units sold in both North America and Europe               |
+| **852376-0000** | M-RAG97 (RF) | Dark Blue — MX 3100 bundle variant; not observed in standalone retail                         |
+| **852384-1000** | M-RBA97 (BT) | Bluetooth version                                                                             |
+| **831145-0000** | C-BN34       | Charging dock / RF receiver                                                                   |
+| **832243-0000** | C-UV35       | Bluetooth USB transceiver                                                                     |
+| **190247-1000** | L-LB2        | Battery (also 190247-0000, 190247-B000)                                                       |
 
 The multiple 852152 suffixes (-0000, -0100, -0300) across the RF mouse suggest regional or production-run sub-variants on the hardware itself.
 
@@ -131,10 +131,10 @@ The early windowed box was also noted in contemporary reviews: the Phoronix revi
 
 Physical inspection of the Millennium project's seven RF specimens has confirmed that the MX1000 RF mouse (M-RAG97) shipped in **at least two distinct PCB revisions**, both marked on the mainboard itself. All specimens share the mainboard part number **P/N 201758-0000** — the same identifier used in the FCC filing DZL201758, confirming Logitech used a unified numbering system across internal part numbers and regulatory submissions.
 
-| PCB Revision | Serial/PID | Confirmed specimens | Manufacture date(s) |
-|-------------|------------|---------------------|---------------------|
-| **Rev. A** | LZB (S/N) | Mouse 3 (852152-1000, Midnight Black) | Week 41, 2004 (Oct 4–10) |
-| **Rev. B** | LZB, LZC (S/N); LZ549B4, LZ603B4 (PID) | Mouse 2 (852376-0000, Dark Blue, LZB); Mouse 4 (852152-0000, LZC); Mouse 1 (852152-0200, LZC); Mice 5 & 6 (852152-0100, PID); Mouse 7 (852152-0200, PID) | Week 7, 2005 through week 3, 2006 |
+| PCB Revision | Serial/PID                             | Confirmed specimens                                                                                                                                      | Manufacture date(s)               |
+| ------------ | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| **Rev. A**   | LZB (S/N)                              | Mouse 3 (852152-1000, Midnight Black)                                                                                                                    | Week 41, 2004 (Oct 4–10)          |
+| **Rev. B**   | LZB, LZC (S/N); LZ549B4, LZ603B4 (PID) | Mouse 2 (852376-0000, Dark Blue, LZB); Mouse 4 (852152-0000, LZC); Mouse 1 (852152-0200, LZC); Mice 5 & 6 (852152-0100, PID); Mouse 7 (852152-0200, PID) | Week 7, 2005 through week 3, 2006 |
 
 The thumb PCB is **Rev. A on every specimen where it has been inspected** (Mice 4, 5, 6, and 7). It has not yet been inspected on Mice 1, 2, or 3. Whether the thumb PCB received any revision during the production run is unknown.
 
@@ -195,40 +195,40 @@ The Bluetooth MX1000 was **not available outside the MX 5000 and diNovo bundle c
 
 ## Production timeline
 
-| Date | Event |
-|------|-------|
-| **June 15, 2004** | FCC testing of M-RAG97 completed (test lab: TÜV Rheinland, Netherlands)[^1] |
-| **August 10, 2004** | FCC certification filed for M-RAG97 (DZL201758)[^1] |
-| **August 20, 2004** | First Newegg listing appears for 931175-0403[^10] |
-| **September 1, 2004** | Logitech officially announces MX1000 — "world's first laser mouse" — in two colors[^7] |
-| **Late September – October 2004** | Retail availability; first reviews published[^9] [^23] |
-| **Week 41, 2004 (Oct 4–10)** | Mouse 3 (LZB44150762, 852152-1000, Midnight Black, PCB Rev. A) manufactured — earliest known production specimen in Millennium project collection |
-| **Week 51, 2004 (Dec 13–19)** | Mouse 4 (LZC45101572, 852152-0000, Gunmetal Silver, PCB Rev. B) manufactured — earliest confirmed Rev. B specimen in collection |
-| **Early 2005** | Cordless Desktop MX 3100 announced at CeBIT; includes MX1000 RF mouse in dark blue variant (852376-0000)[^25] |
-| **Week 7, 2005 (Feb 14–20)** | Mouse 2 (LZB50753012, 852376-0000, Dark Blue, PCB **Rev. B**) manufactured — establishes that LZB serial prefix does not exclusively correspond to Rev. A hardware |
-| **Week 14, 2005 (Apr 4–10)** | Mouse 1 (LZC51411902, 852152-0200, Gunmetal Silver, PCB Rev. B) manufactured — boxed retail unit with SetPoint 2.14b and documentation Rev. 1.5 |
-| **August 16, 2005** | Logitech announces Cordless Desktop MX 5000 Laser (with BT MX1000)[^19] |
-| **September 26, 2005** | FCC certification filed for M-RBA97 Bluetooth mouse (DZL201945)[^2] |
-| **Week 49, 2005 (Dec 5–11)** | Mice 5 & 6 (PID LZ549B4, 852152-0100, Gunmetal Silver, PCB Rev. B) manufactured — identical PIDs confirm lot-level identifier system |
-| **Late 2005** | MX 5000 bundle ships; BT MX1000 enters market |
-| **Week 3, 2006 (Jan 16–22)** | Mouse 7 (PID LZ603B4, 852152-0200, Gunmetal Silver, PCB Rev. B) manufactured |
-| **2006** | diNovo Media Desktop Laser ships with BT MX1000[^20] |
-| **July 11, 2006** | Updated FCC filing for M-RBA97 with new internal/external photos (hardware revision)[^2] |
-| **August 24, 2006** | Logitech announces MX Revolution as MX1000 successor ($99.99 MSRP)[^24] |
-| **Late 2006** | MX1000 effectively discontinued; MX Revolution takes over |
-| **~2008** | MX 5000 and diNovo bundles discontinued; succeeded by MX 5500 Revolution[^21] |
+| Date                              | Event                                                                                                                                                              |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **June 15, 2004**                 | FCC testing of M-RAG97 completed (test lab: TÜV Rheinland, Netherlands)[^1]                                                                                        |
+| **August 10, 2004**               | FCC certification filed for M-RAG97 (DZL201758)[^1]                                                                                                                |
+| **August 20, 2004**               | First Newegg listing appears for 931175-0403[^10]                                                                                                                  |
+| **September 1, 2004**             | Logitech officially announces MX1000 — "world's first laser mouse" — in two colors[^7]                                                                             |
+| **Late September – October 2004** | Retail availability; first reviews published[^9] [^23]                                                                                                             |
+| **Week 41, 2004 (Oct 4–10)**      | Mouse 3 (LZB44150762, 852152-1000, Midnight Black, PCB Rev. A) manufactured — earliest known production specimen in Millennium project collection                  |
+| **Week 51, 2004 (Dec 13–19)**     | Mouse 4 (LZC45101572, 852152-0000, Gunmetal Silver, PCB Rev. B) manufactured — earliest confirmed Rev. B specimen in collection                                    |
+| **Early 2005**                    | Cordless Desktop MX 3100 announced at CeBIT; includes MX1000 RF mouse in dark blue variant (852376-0000)[^25]                                                      |
+| **Week 7, 2005 (Feb 14–20)**      | Mouse 2 (LZB50753012, 852376-0000, Dark Blue, PCB **Rev. B**) manufactured — establishes that LZB serial prefix does not exclusively correspond to Rev. A hardware |
+| **Week 14, 2005 (Apr 4–10)**      | Mouse 1 (LZC51411902, 852152-0200, Gunmetal Silver, PCB Rev. B) manufactured — boxed retail unit with SetPoint 2.14b and documentation Rev. 1.5                    |
+| **August 16, 2005**               | Logitech announces Cordless Desktop MX 5000 Laser (with BT MX1000)[^19]                                                                                            |
+| **September 26, 2005**            | FCC certification filed for M-RBA97 Bluetooth mouse (DZL201945)[^2]                                                                                                |
+| **Week 49, 2005 (Dec 5–11)**      | Mice 5 & 6 (PID LZ549B4, 852152-0100, Gunmetal Silver, PCB Rev. B) manufactured — identical PIDs confirm lot-level identifier system                               |
+| **Late 2005**                     | MX 5000 bundle ships; BT MX1000 enters market                                                                                                                      |
+| **Week 3, 2006 (Jan 16–22)**      | Mouse 7 (PID LZ603B4, 852152-0200, Gunmetal Silver, PCB Rev. B) manufactured                                                                                       |
+| **2006**                          | diNovo Media Desktop Laser ships with BT MX1000[^20]                                                                                                               |
+| **July 11, 2006**                 | Updated FCC filing for M-RBA97 with new internal/external photos (hardware revision)[^2]                                                                           |
+| **August 24, 2006**               | Logitech announces MX Revolution as MX1000 successor ($99.99 MSRP)[^24]                                                                                            |
+| **Late 2006**                     | MX1000 effectively discontinued; MX Revolution takes over                                                                                                          |
+| **~2008**                         | MX 5000 and diNovo bundles discontinued; succeeded by MX 5500 Revolution[^21]                                                                                      |
 
 ---
 
 ## Complete model and regulatory ID summary
 
-| Component | Model | FCC ID | ANATEL | Key Part Numbers |
-|-----------|-------|--------|--------|-----------------|
-| Mouse (RF) | M-RAG97 | DZL201758 | 00495-06-02347 | 852152-0000/-0100/-0300/-1000; 852376-0000 |
-| Mouse (Bluetooth) | M-RBA97 | DZL201945 | 00729-06-02347 | 852384-1000 |
-| Dock / RF Receiver | C-BN34 | None (receive-only) | — | 831145-0000 |
-| Bluetooth USB Dongle | C-UV35 | DZL201986 | — | 832243-0000 |
-| Battery | L-LB2 | N/A | N/A | 190247-1000 |
+| Component            | Model   | FCC ID              | ANATEL         | Key Part Numbers                           |
+| -------------------- | ------- | ------------------- | -------------- | ------------------------------------------ |
+| Mouse (RF)           | M-RAG97 | DZL201758           | 00495-06-02347 | 852152-0000/-0100/-0300/-1000; 852376-0000 |
+| Mouse (Bluetooth)    | M-RBA97 | DZL201945           | 00729-06-02347 | 852384-1000                                |
+| Dock / RF Receiver   | C-BN34  | None (receive-only) | —              | 831145-0000                                |
+| Bluetooth USB Dongle | C-UV35  | DZL201986           | —              | 832243-0000                                |
+| Battery              | L-LB2   | N/A                 | N/A            | 190247-1000                                |
 
 The FCC grantee code for all MX1000 filings is **DZL** (Logitech Inc., Newark, CA), not JNZ (Logitech Far East Ltd.). The C-BN34 dock has no FCC ID because receive-only devices operating under Part 15 do not require FCC certification.
 
@@ -247,30 +247,57 @@ The FCC's internal photo PDFs for both DZL201758 (4 parts) and DZL201945 (2 subm
 ## References
 
 [^1]: fcc.report — FCC ID DZL201758 (M-RAG97 RF Cordless Mouse). <https://fcc.report/FCC-ID/DZL201758>
+
 [^2]: fccid.io — FCC ID DZL201945 (M-RBA97 Bluetooth Mouse). <https://fccid.io/DZL201945>
+
 [^3]: Logitech Support — Bluetooth support for my MX 1000. <https://support.logi.com/hc/en-001/articles/360023212594-Bluetooth-support-for-my-MX-1000>
+
 [^4]: fccid.io — DZL201945 Operational Description: General Information. <https://fccid.io/DZL201945/Operational-Description/General-Information-585552>
+
 [^5]: Logitech Support — MX 1000 Technical Specifications. <https://support.logi.com/hc/en-us/articles/360023305394-MX-1000-Technical-Specifications>
+
 [^6]: Amazon — FITHOOD Replacement Battery for LOGITECH M-RAG97 MX1000 (190247-1000, L-LB2). <https://www.amazon.com/Replacement-Battery-LOGITECH-Cordless-190247-1000/dp/B07XRKJVP7>
+
 [^7]: Phys.org — Logitech Unveils the World's First Laser Mouse (September 1, 2004). <https://phys.org/news/2004-09-logitech-unveils-world180s-laser-mouse.html>
+
 [^8]: Macworld — Logitech introduces MX 1000 Laser Cordless Mouse. <https://www.macworld.com/article/172164/mx1000.html>
+
 [^9]: The Gadgeteer — Logitech MX1000 Laser Cordless Mouse Review (October 18, 2004). <https://the-gadgeteer.com/2004/10/18/logitech_mx1000_laser_cordless_mouse_review/>
+
 [^10]: Newegg — Logitech MX1000 931175-0403 Blue/Black Laser Mouse. <https://www.newegg.com/logitech-931175-0403-mx1000/p/N82E16826104158>
+
 [^11]: Icecat — Logitech MX1000 Laser Midnight Cordless Mouse (931272-0914). <https://icecat.biz/us/p/logitech/931272-0914/mice-mx1000+midnight-120366.html>
+
 [^12]: Icecat — Logitech MX1000 mouse RF Wireless Laser (931175-0914). <https://icecat.biz/us/p/logitech/931175-0914/mice-5099206968493-mx1000-120351.html>
+
 [^13]: Apple Community — Logitech MX1000 'midnight' mouse discussion. <https://discussions.apple.com/thread/417077>
+
 [^14]: eBay — Logitech MX1000L Laser Cordless RF Wireless Mouse (931175-0403). <https://www.ebay.com/itm/224564727188>
+
 [^15]: AnandTech Forums — New Logitech MX1000 Review discussion. <https://forums.anandtech.com/threads/new-logitech-mx1000-review.1443895/>
+
 [^16]: Digi-Key — ADNS-6000 Datasheet by Broadcom Limited. <https://www.digikey.com.au/htmldatasheets/production/663849/0/0/1/adns-6000.html>
+
 [^17]: benvallack.com — Easy fix for Logitech MX Revolution not charging (documents both C-BN34 dock wiring variants). <https://benvallack.com/notebook/easy-fix-for-logitech-mx-revolution-not-charging/>
+
 [^18]: Amazon — UpBright 13V AC/DC Adapter for Logitech C-BN34 831145-0000. <https://www.amazon.com/UPBRIGHT-Logitech-831145-0000-8311450000-Cordless/dp/B00GYSAUSY>
+
 [^19]: Logitech IR — Keyboard LCD a Smart Addition to Logitech Cordless Desktop MX 5000 Laser (2005). <https://ir.logitech.com/press-releases/press-release-details/2005/Keyboard-LCD-a-Smart-Addition-to-Logitech-Cordless-Desktop-MX-5000-Laser/default.aspx>
+
 [^20]: Amazon — Logitech diNovo Media Desktop Laser (967562-0403). <https://www.amazon.com/Logitech-diNovo-Media-Desktop-Laser/dp/B000AY0IT4>
+
 [^21]: Hardware Canucks — Logitech MX5500 Revolution review. <https://hardwarecanucks.com/forum/threads/logitech-mx5500-review.21387/>
+
 [^22]: APH Networks — Logitech MX3000 Review (MX3000 bundle uses MX600, not MX1000). <https://aphnetworks.com/reviews/logitech_mx3000>
+
 [^23]: Trusted Reviews — Logitech MX1000 Laser Cordless Mouse Review. <https://www.trustedreviews.com/reviews/logitech-mx1000-laser-cordless-mouse>
+
 [^24]: Logitech News — Logitech Mice Deliver Revolution in Personal Computing Navigation (August 24, 2006). <https://news.logitech.com/press-releases/news-details/2006/Logitech-Mice-Deliver-Revolution-in-Personal-Computing-Navigation-The-Wheel-Reinvented-Revolution-Mice-Speed-Mac-and-PC-Users-Through-Digital-Content-with-Hyper-Fast-Scrolling/default.aspx>
+
 [^25]: ASE Labs — Logitech Cordless Desktop MX3100 preview (documents color distinction from standard MX1000). <http://www.prop.aselabs.com/articles.php?id=172>
+
 [^26]: AnandTech Forums — Logitech Cordless Desktop MX 3100 deal discussion (documents in-person color description). <https://forums.anandtech.com/threads/hot-or-not-logitech-cordless-desktop-mx-3100-w-mx1000-laser-mouse-115-33-shipped-buy-com.1567695/>
+
 [^27]: HardForum — "New version of Logitech MX1000?" thread (January 14–15, 2005); documents box design revision hiding serial number, LZB/LZC color distinction ("bluish hue" vs. "dark charcoal pearlescent"), and LZC lag-free behavior. <https://hardforum.com/threads/new-version-of-logitech-mx1000.854762/>
+
 [^28]: Phoronix — Logitech MX518 and MX1000 review; describes early packaging with plastic window allowing mice to be "easily seen." <https://www.phoronix.com/review/383>
