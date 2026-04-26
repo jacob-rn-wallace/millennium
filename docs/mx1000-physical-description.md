@@ -6,28 +6,28 @@ This document establishes agreed component names and per-colorway visual descrip
 
 ## Parts inventory
 
-The following table lists all known discrete plastic parts of the MX1000 case assembly, catalogued from physical inspection of Mouse 3 (P/N 852152-1000, Midnight Black). Part numbers and CAV codes were read directly from markings moulded into each part. Entries marked N/A either bore no marking or the marking was too small to read reliably.
+The following table lists all known discrete plastic parts of the MX1000 case assembly, catalogued from physical inspection of Mouse 3 (P/N 852152-1000, Midnight Black). Part numbers were read directly from markings moulded into each part.
 
 Mould markings (2nd identifiers) were recorded across all seven specimens and are documented separately in `docs/mx1000-mould-markings.md`.
 
-| Part term                  | P/N         | Material         |
-|----------------------------|-------------|-----|
-| Bottom plate               | 402443-0000 | ABS              |
-| Battery cover              | 003107-0000 | ABS              |
-| Main body                  | 402442-0000 | ABS (rubberized) |
-| Forward/back rockers pivot | 003109-0000 | ABS              |
-| Top shell                  | 402444-0000 | ABS              |
-| Battery indicator window   | 402449-0000 | ABS              |
-| Battery indicator light pipe | N/A       | ABS              |
-| Application switch button  | N/A         | ABS              |
-| Scroll wheel               | N/A         | ABS (rubberized) |
-| Scroll wheel cage          | N/A         | ABS              |
-| Scroll wheel pivot clip    | N/A         | ABS              |
-| Scroll wheel surround      | N/A         | ABS              |
-| Cruise control rockers     | N/A         | ABS              |
-| Forward/back rockers       | N/A         | ABS              |
-| Connect/Reset button       | N/A         | ABS              |
-| Power switch               | N/A         | ABS              |
+| Part term                    | P/N         | Material         |
+|------------------------------|-------------|------------------|
+| Bottom plate                 | 402443-0000 | ABS              |
+| Battery cover                | 003107-0000 | ABS              |
+| Main body                    | 402442-0000 | ABS (rubberized) |
+| Forward/back rockers pivot   | 003109-0000 | ABS              |
+| Top shell                    | 402444-0000 | ABS              |
+| Battery indicator window     | 402449-0000 | ABS              |
+| Battery indicator light pipe | N/A         | ABS              |
+| Application switch button    | N/A         | ABS              |
+| Scroll wheel                 | N/A         | ABS (rubberized) |
+| Scroll wheel cage            | N/A         | ABS              |
+| Scroll wheel pivot clip      | N/A         | ABS              |
+| Scroll wheel surround        | N/A         | ABS              |
+| Cruise control rockers       | N/A         | ABS              |
+| Forward/back rockers         | N/A         | ABS              |
+| Connect/Reset button         | N/A         | ABS              |
+| Power switch                 | N/A         | ABS              |
 
 Parts marked N/A either bore no part number marking or the marking area was too small to read reliably.
 
@@ -75,7 +75,7 @@ The main body is a single rubberized ABS part comprising most of the structural 
 
 **Left grip zone** — the rubberized surface on the left (thumb) side of the main body
 
-**Right side** — the smooth surface on the right side of the main body; houses no buttons on the standard M-RAG97
+**Right side** — the rubberized surface on the right side of the main body; houses no buttons on the standard M-RAG97
 
 **Thumb groove** — the pronounced concave recess on the left side of the main body where the thumb rests naturally
 
@@ -129,7 +129,7 @@ A discrete ABS part. The Li-ion battery is internal and not user-accessible in t
 
 **Left grip zone:** Rubberized ABS surface of the main body; reads as black rubber
 
-**Right side:** Smooth ABS surface of the main body, same color family as the top shell
+**Right side:** Rubberized ABS surface of the main body, same as the left grip zone
 
 **Cruise control rockers:** Silver/chrome
 
@@ -147,7 +147,7 @@ A discrete ABS part. The Li-ion battery is internal and not user-accessible in t
 
 **Left grip zone:** Rubberized ABS surface of the main body; reads as black rubber
 
-**Right side:** Smooth ABS surface of the main body, same glossy black as the top shell
+**Right side:** Rubberized ABS surface of the main body, same as the left grip zone
 
 **Cruise control rockers:** Silver/chrome (same as Gunmetal Silver)
 
@@ -179,12 +179,12 @@ The Dark Blue variant is effectively **identical to the Gunmetal Silver in every
 
 ## Key visual differentiators between colorways
 
-| Feature | Gunmetal Silver | Midnight Black | Dark Blue |
-|---------|----------------|----------------|-----------|
-| Top shell finish | Matte metallic | Glossy | Matte metallic |
-| Top shell color | Blue-grey (light-dependent) | Near-black | Dark saturated blue |
-| Scroll wheel surround | Silver/chrome | Black | Silver/chrome |
-| Scroll wheel zone reading | Unified silver element | Silver rockers on black surround | Unified silver element |
+| Feature                   | Gunmetal Silver             | Midnight Black                   | Dark Blue              |
+|---------------------------|-----------------------------|----------------------------------|------------------------|
+| Top shell finish          | Matte metallic              | Glossy                           | Matte metallic         |
+| Top shell color           | Blue-grey (light-dependent) | Near-black                       | Dark saturated blue    |
+| Scroll wheel surround     | Silver/chrome               | Black                            | Silver/chrome          |
+| Scroll wheel zone reading | Unified silver element      | Silver rockers on black surround | Unified silver element |
 
 ---
 
