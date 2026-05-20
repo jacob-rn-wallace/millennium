@@ -1,4 +1,4 @@
-# CLAUDE.md
+# CLAUDE.md — Millennium Claude Code Context
 
 ## What this repository is
 
@@ -135,11 +135,10 @@ See `docs/millennium-roadmap.md` for the full phase definitions and gate conditi
 
 ## Commit workflow
 
-- Jake stages and executes commits; Claude proposes the commands but does not assume they have been run
-- Commit messages are specific and enumerate individual changes
-- Do not assume a commit has been made unless Jake confirms (e.g., "ok done")
-- Jake handles `git push` independently
+- Make commits directly after completing a logical unit of work; do not batch unrelated changes
+- Commit messages are specific and enumerate individual changes made
 - Frequent, scoped commits — one logical change per commit where practical
+- Do not push unless the user explicitly asks for it
 
 ---
 
